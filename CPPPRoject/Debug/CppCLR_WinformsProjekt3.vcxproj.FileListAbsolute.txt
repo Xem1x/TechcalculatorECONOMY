@@ -1,0 +1,16 @@
+G:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.vcxprojAssemblyReference.cache
+G:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.CalcForm.resources
+G:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.CountForm.resources
+G:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.EntryForm.resources
+G:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.OptionFromh.resources
+G:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.vcxproj.GenerateResource.cache
+G:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.exe
+G:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.pdb
+E:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.vcxprojAssemblyReference.cache
+E:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.CalcForm.resources
+E:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.CountForm.resources
+E:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.EntryForm.resources
+E:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.OptionFromh.resources
+E:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.vcxproj.GenerateResource.cache
+E:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.exe
+E:\CPPPRoject\Debug\CppCLR_WinformsProjekt3.pdb

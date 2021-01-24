@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (CppCLR_WinformsProject3.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  CalcForm.cpp
+  CppCLR_WinformsProjekt.cpp
+  EntryForm.cpp
+  Generating Code...
+  AddInOrder.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  CppCLR_WinformsProjekt3.vcxproj -> C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.exe
