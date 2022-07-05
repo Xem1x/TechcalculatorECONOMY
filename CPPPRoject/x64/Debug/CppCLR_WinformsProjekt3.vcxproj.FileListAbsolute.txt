@@ -1,8 +1,0 @@
-C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.vcxprojAssemblyReference.cache
-C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.CalcForm.resources
-C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.CountForm.resources
-C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.EntryForm.resources
-C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.OptionFromh.resources
-C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.vcxproj.GenerateResource.cache
-C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.exe
-C:\Users\Xemix\source\repos\CPPPRoject\x64\Debug\CppCLR_WinformsProjekt3.pdb

@@ -364,7 +364,7 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 		{
 			TotalSpendingMaterials += Sflange * materialsFlange[p];
 		}
-		outputSize = System::Convert::ToString(diameter + "*" + width);
+		 outputSize = System::Convert::ToString(diameter + "*" + width);
 	}
 	//  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//																														//						
@@ -804,15 +804,29 @@ System::Void CostCalculator::CalcForm::CheckBox6_CheckedChanged(System::Object^ 
 
 System::Void CostCalculator::CalcForm::Button3_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	system("mspaint");
+	
 	String^ temperature = textBox14->Text;
 	string temperatureNew = msclr::interop::marshal_as<std::string>(temperature);
 
 
 	String^ Onumber = textBox15->Text;
 	string OnumberNew = msclr::interop::marshal_as<std::string>(Onumber);
+	String^ outputSize;
+	if (checkBox1->Checked == true) {
+		
+		int diameter = System::Convert::ToDouble(textBox1->Text) / 1000;
+		int width = System::Convert::ToDouble(textBox3->Text) / 1000;
+		outputSize = System::Convert::ToString(diameter + "*" + width);
+	}
+	
+	if (checkBox2->Checked == true) {
 
-	String^ outputSize = outputSize;
+		int length1 = System::Convert::ToDouble(textBox1->Text) / 1000;
+		int length2 = length2 = System::Convert::ToDouble(textBox5->Text) / 1000;
+		int width = System::Convert::ToDouble(textBox3->Text) / 1000;
+		outputSize = System::Convert::ToString(length1 + "*" + length2 + "*" + width);
+	}
+	
 	string outputSizeNew = msclr::interop::marshal_as<std::string>(outputSize);
 
 	ofstream wordpass;
