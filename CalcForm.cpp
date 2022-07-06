@@ -2,27 +2,27 @@
 #include "pch.h"
 #include "CalcForm.h"
 
-System::Void CostCalculator::CalcForm::CheckBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Circle_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 {
-	if (checkBox1->Checked == true)
+	if (Circle_Check_box->Checked == true)
 	{
-		checkBox2->Checked = false;
-		checkBox3->Checked = false;
-		checkBox4->Checked = false;
+		Rectangle_Check_box->Checked = false;
+		Flange_Check_box->Checked = false;
+		Tape_Check_box->Checked = false;
 
-		textBox4->Text = "";
+		coefficient_textBox->Text = "";
 
-		textBox1->Enabled = true;
-		textBox2->Enabled = true;
-		textBox3->Enabled = true;
-		textBox5->Enabled = true;
-		textBox5->Visible = false;
-		textBox6->Enabled = true;
-		textBox14->Enabled = true;
-		textBox15->Enabled = true;
+		Length1_textBox->Enabled = true;
+		Flange_width_textBox->Enabled = true;
+		Width_textBox->Enabled = true;
+		Length2_textBox->Enabled = true;
+		Length2_textBox->Visible = false;
+		Silicone_textBox->Enabled = true;
+		Temperature_textBox->Enabled = true;
+		Order_number_textBox->Enabled = true;
 
-		button2->Enabled = true;
-		button2->Visible = false;
+		Set_second_length_same_button->Enabled = true;
+		Set_second_length_same_button->Visible = false;
 
 		label2->Enabled = true;
 		label3->Enabled = true;
@@ -39,29 +39,29 @@ System::Void CostCalculator::CalcForm::CheckBox1_CheckedChanged(System::Object^ 
 		label19->Enabled = true;
 		label20->Enabled = true;
 
-		checkBox3->Enabled = true;
-		checkBox4->Enabled = true;
-		checkBox5->Enabled = true;
+		Flange_Check_box->Enabled = true;
+		Tape_Check_box->Enabled = true;
+		Index_Check_box->Enabled = true;
 	}
-	else if (checkBox1->Checked == false)
+	else if (Circle_Check_box->Checked == false)
 	{
-		checkBox2->Checked = false;
-		checkBox3->Checked = false;
-		checkBox4->Checked = false;
+		Rectangle_Check_box->Checked = false;
+		Flange_Check_box->Checked = false;
+		Tape_Check_box->Checked = false;
 
-		textBox4->Text = "";
+		coefficient_textBox->Text = "";
 
-		textBox1->Enabled = false;
-		textBox2->Enabled = false;
-		textBox3->Enabled = false;
-		textBox5->Enabled = false;
-		textBox5->Visible = true;
-		textBox6->Enabled = false;
-		textBox14->Enabled = false;
-		textBox15->Enabled = false;
+		Length1_textBox->Enabled = false;
+		Flange_width_textBox->Enabled = false;
+		Width_textBox->Enabled = false;
+		Length2_textBox->Enabled = false;
+		Length2_textBox->Visible = true;
+		Silicone_textBox->Enabled = false;
+		Temperature_textBox->Enabled = false;
+		Order_number_textBox->Enabled = false;
 
-		button2->Enabled = false;
-		button2->Visible = true;
+		Set_second_length_same_button->Enabled = false;
+		Set_second_length_same_button->Visible = true;
 
 		label2->Enabled = false;
 		label3->Enabled = false;
@@ -78,32 +78,32 @@ System::Void CostCalculator::CalcForm::CheckBox1_CheckedChanged(System::Object^ 
 		label19->Enabled = false;
 		label20->Enabled = false;
 
-		checkBox3->Enabled = false;
-		checkBox4->Enabled = false;
-		checkBox5->Enabled = false;
+		Flange_Check_box->Enabled = false;
+		Tape_Check_box->Enabled = false;
+		Index_Check_box->Enabled = false;
 
 	}
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::CheckBox2_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Rectangle_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 {
-	if (checkBox2->Checked == true)
+	if (Rectangle_Check_box->Checked == true)
 	{
-		checkBox1->Checked = false;
-		checkBox3->Checked = false;
-		checkBox4->Checked = false;
+		Circle_Check_box->Checked = false;
+		Flange_Check_box->Checked = false;
+		Tape_Check_box->Checked = false;
 
-		textBox4->Text = "";
+		coefficient_textBox->Text = "";
 
-		textBox1->Enabled = true;
-		textBox2->Enabled = true;
-		textBox3->Enabled = true;
-		textBox5->Enabled = true;
-		textBox5->Visible = true;
-		textBox6->Enabled = true;
-		textBox14->Enabled = true;
-		textBox15->Enabled = true;
+		Length1_textBox->Enabled = true;
+		Flange_width_textBox->Enabled = true;
+		Width_textBox->Enabled = true;
+		Length2_textBox->Enabled = true;
+		Length2_textBox->Visible = true;
+		Silicone_textBox->Enabled = true;
+		Temperature_textBox->Enabled = true;
+		Order_number_textBox->Enabled = true;
 
 		label2->Enabled = true;
 		label3->Enabled = true;
@@ -121,30 +121,30 @@ System::Void CostCalculator::CalcForm::CheckBox2_CheckedChanged(System::Object^ 
 		label19->Enabled = true;
 		label20->Enabled = true;
 
-		button2->Enabled = true;
-		button2->Visible = true;
+		Set_second_length_same_button->Enabled = true;
+		Set_second_length_same_button->Visible = true;
 
 
-		checkBox3->Enabled = true;
-		checkBox4->Enabled = true;
-		checkBox5->Enabled = true;
+		Flange_Check_box->Enabled = true;
+		Tape_Check_box->Enabled = true;
+		Index_Check_box->Enabled = true;
 	}
-	else if (checkBox2->Checked == false)
+	else if (Rectangle_Check_box->Checked == false)
 	{
-		checkBox1->Checked = false;
-		checkBox3->Checked = false;
-		checkBox4->Checked = false;
+		Circle_Check_box->Checked = false;
+		Flange_Check_box->Checked = false;
+		Tape_Check_box->Checked = false;
 
-		textBox4->Text = "";
+		coefficient_textBox->Text = "";
 
-		textBox1->Enabled = false;
-		textBox2->Enabled = false;
-		textBox3->Enabled = false;
-		textBox5->Enabled = false;
-		textBox5->Visible = false;
-		textBox6->Enabled = false;
-		textBox14->Enabled = false;
-		textBox15->Enabled = false;
+		Length1_textBox->Enabled = false;
+		Flange_width_textBox->Enabled = false;
+		Width_textBox->Enabled = false;
+		Length2_textBox->Enabled = false;
+		Length2_textBox->Visible = false;
+		Silicone_textBox->Enabled = false;
+		Temperature_textBox->Enabled = false;
+		Order_number_textBox->Enabled = false;
 
 		label2->Enabled = false;
 		label3->Enabled = false;
@@ -162,13 +162,13 @@ System::Void CostCalculator::CalcForm::CheckBox2_CheckedChanged(System::Object^ 
 		label19->Enabled = false;
 		label20->Enabled = false;
 
-		button2->Enabled = false;
-		button2->Visible = false;
+		Set_second_length_same_button->Enabled = false;
+		Set_second_length_same_button->Visible = false;
 
 
-		checkBox3->Enabled = false;
-		checkBox4->Enabled = false;
-		checkBox5->Enabled = false;
+		Flange_Check_box->Enabled = false;
+		Tape_Check_box->Enabled = false;
+		Index_Check_box->Enabled = false;
 
 
 
@@ -176,35 +176,35 @@ System::Void CostCalculator::CalcForm::CheckBox2_CheckedChanged(System::Object^ 
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::Button2_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Set_second_length_same_button_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	double length;
 
 
 	try
 	{
-		length = System::Convert::ToDouble(textBox1->Text);
+		length = System::Convert::ToDouble(Length1_textBox->Text);
 	}
 	catch (FormatException^)
 	{
-		textBox1->BackColor = Color::FromArgb(255, 192, 192);
+		Length1_textBox->BackColor = Color::FromArgb(255, 192, 192);
 	}
 
-	textBox5->Text = System::Convert::ToString(length);
+	Length2_textBox->Text = System::Convert::ToString(length);
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Calculate_button_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	cost = 0;
 
 	try
 	{
-		index = System::Convert::ToDouble(textBox4->Text);
+		index = System::Convert::ToDouble(coefficient_textBox->Text);
 	}
 	catch (FormatException^)
 	{
-		textBox4->BackColor = Color::FromArgb(255, 192, 192);
+		coefficient_textBox->BackColor = Color::FromArgb(255, 192, 192);
 	}
 
 
@@ -294,7 +294,7 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 
 
 
-	if (checkBox1->Checked == true)
+	if (Circle_Check_box->Checked == true)
 	{
 
 
@@ -303,29 +303,29 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 
 		try
 		{
-			diameter = System::Convert::ToDouble(textBox1->Text) / 1000;
+			diameter = System::Convert::ToDouble(Length1_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox1->BackColor = Color::FromArgb(255, 192, 192);
+			Length1_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 		try
 		{
-			width = System::Convert::ToDouble(textBox3->Text) / 1000;
+			width = System::Convert::ToDouble(Width_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox3->BackColor = Color::FromArgb(255, 192, 192);
+			Width_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 		try
 		{
-			widthflange = System::Convert::ToDouble(textBox2->Text) / 1000;
+			widthflange = System::Convert::ToDouble(Flange_width_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox2->BackColor = Color::FromArgb(255, 192, 192);
+			Flange_width_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 
@@ -338,14 +338,14 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 
 
 
-		if (checkBox3->Checked == true)
+		if (Flange_Check_box->Checked == true)
 		{
 
 			S1 = diameter * pi * (width + 2 * widthflange);
 			Sflange = diameter * pi * 2 * 2 * widthflange;
 
 		}
-		if (checkBox4->Checked == true)
+		if (Tape_Check_box->Checked == true)
 		{
 			S1 = diameter * pi * width;
 			Sflange = diameter * pi * 2 * 2 * widthflange;
@@ -373,7 +373,7 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 	//																														//
 	//																														//
 	//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	if (checkBox2->Checked == true)
+	if (Rectangle_Check_box->Checked == true)
 	{
 
 
@@ -381,48 +381,48 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 		double  length1, length2, width, widthflange;
 		try
 		{
-			length1 = System::Convert::ToDouble(textBox1->Text) / 1000;
+			length1 = System::Convert::ToDouble(Length1_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox1->BackColor = Color::FromArgb(255, 192, 192);
+			Length1_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 		try
 		{
-			length2 = System::Convert::ToDouble(textBox5->Text) / 1000;
+			length2 = System::Convert::ToDouble(Length2_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox5->BackColor = Color::FromArgb(255, 192, 192);
+			Length2_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 		try
 		{
-			width = System::Convert::ToDouble(textBox3->Text) / 1000;
+			width = System::Convert::ToDouble(Width_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox3->BackColor = Color::FromArgb(255, 192, 192);
+			Width_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 		try
 		{
-			widthflange = System::Convert::ToDouble(textBox2->Text) / 1000;
+			widthflange = System::Convert::ToDouble(Flange_width_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox2->BackColor = Color::FromArgb(255, 192, 192);
+			Flange_width_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 
 
-		if (checkBox3->Checked == true)
+		if (Flange_Check_box->Checked == true)
 		{
 			S1 = (length1 + length2) * 2 * (width + 2 * widthflange);
 			Sflange = ((length1 + 2 * widthflange) + length2) * 2 * 2 * widthflange;
 		}
-		if (checkBox4->Checked == true)
+		if (Tape_Check_box->Checked == true)
 		{
 			S1 = (length1 + length2) * 2 * width;
 			Sflange = ((length1 + 2 * widthflange) + length2) * 2 * 2 * widthflange;
@@ -441,59 +441,59 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 	};
 
 
-	if (checkBox6->Checked == true)
+	if (Insert_Check_box->Checked == true)
 
 	{
 		double workadd, widthadd, lengthadd1, height, lengthAddEars, SAdd, VAdd;
 
 		try
 		{
-			lengthadd1 = System::Convert::ToDouble(textBox8->Text) / 1000;
+			lengthadd1 = System::Convert::ToDouble(Insert_Length1_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox8->BackColor = Color::FromArgb(255, 192, 192);
+			Insert_Length1_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 
 		try
 		{
-			height = System::Convert::ToDouble(textBox10->Text) / 1000;
+			height = System::Convert::ToDouble(Insert_height_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox10->BackColor = Color::FromArgb(255, 192, 192);
+			Insert_height_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 
 		try
 		{
-			widthadd = System::Convert::ToDouble(textBox9->Text) / 1000;
+			widthadd = System::Convert::ToDouble(Insert_width_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox9->BackColor = Color::FromArgb(255, 192, 192);
+			Insert_width_textBox->BackColor = Color::FromArgb(255, 192, 192);
 		}
 
 
 		try
 		{
-			workadd = System::Convert::ToDouble(textBox13->Text);
+			workadd = System::Convert::ToDouble(Length1_Width_textBox->Text);
 		}
 		catch (FormatException^)
 		{
-			textBox13->BackColor = Color::FromArgb(255, 192, 192);;
+			Length1_Width_textBox->BackColor = Color::FromArgb(255, 192, 192);;
 		}
 
 
 
 		try
 		{
-			lengthAddEars = System::Convert::ToDouble(textBox11->Text) / 1000;
+			lengthAddEars = System::Convert::ToDouble(Length1_textBox1->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			textBox11->BackColor = Color::FromArgb(255, 224, 192);
+			Length1_textBox1->BackColor = Color::FromArgb(255, 224, 192);
 			lengthAddEars = 0;
 		}
 
@@ -532,7 +532,7 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 
 
 	}
-	else if (checkBox6->Checked == false)
+	else if (Insert_Check_box->Checked == false)
 	{
 		TotalSpendingMaterialsAdd = 0;
 		workadd = 0;
@@ -542,78 +542,78 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 
 	try
 	{
-		silicone = System::Convert::ToDouble(textBox6->Text) * 130;
+		silicone = System::Convert::ToDouble(Silicone_textBox->Text) * 130;
 	}
 	catch (FormatException^)
 	{
-		textBox6->BackColor = Color::FromArgb(255, 192, 192);
+		Silicone_textBox->BackColor = Color::FromArgb(255, 192, 192);
 	}
 
 	try
 	{
-		work = System::Convert::ToDouble(textBox12->Text);
+		work = System::Convert::ToDouble(Work_cost_main_part_textBox->Text);
 	}
 	catch (FormatException^)
 	{
-		textBox12->BackColor = Color::FromArgb(255, 192, 192);
+		Work_cost_main_part_textBox->BackColor = Color::FromArgb(255, 192, 192);
 	}
 
-	if (textBox1->Text != "")
+	if (Length1_textBox->Text != "")
 	{
-		textBox1->BackColor = Color::FromArgb(192, 255, 192);
+		Length1_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox2->Text != "")
+	if (Flange_width_textBox->Text != "")
 	{
-		textBox2->BackColor = Color::FromArgb(192, 255, 192);
+		Flange_width_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox3->Text != "")
+	if (Width_textBox->Text != "")
 	{
-		textBox3->BackColor = Color::FromArgb(192, 255, 192);
+		Width_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox4->Text != "")
+	if (coefficient_textBox->Text != "")
 	{
-		textBox4->BackColor = Color::FromArgb(192, 255, 192);
+		coefficient_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox5->Text != "")
+	if (Length2_textBox->Text != "")
 	{
-		textBox5->BackColor = Color::FromArgb(192, 255, 192);
+		Length2_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox6->Text != "")
+	if (Silicone_textBox->Text != "")
 	{
-		textBox6->BackColor = Color::FromArgb(192, 255, 192);
+		Silicone_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
 
-	if (textBox8->Text != "")
+	if (Insert_Length1_textBox->Text != "")
 	{
-		textBox8->BackColor = Color::FromArgb(192, 255, 192);
+		Insert_Length1_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox9->Text != "")
+	if (Insert_width_textBox->Text != "")
 	{
-		textBox9->BackColor = Color::FromArgb(192, 255, 192);
+		Insert_width_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox10->Text != "")
+	if (Insert_height_textBox->Text != "")
 	{
-		textBox10->BackColor = Color::FromArgb(192, 255, 192);
+		Insert_height_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox11->Text != "")
+	if (Length1_textBox1->Text != "")
 	{
-		textBox11->BackColor = Color::FromArgb(192, 255, 192);
+		Length1_textBox1->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox12->Text != "")
+	if (Work_cost_main_part_textBox->Text != "")
 	{
-		textBox12->BackColor = Color::FromArgb(192, 255, 192);
+		Work_cost_main_part_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox13->Text != "")
+	if (Length1_Width_textBox->Text != "")
 	{
-		textBox13->BackColor = Color::FromArgb(192, 255, 192);
+		Length1_Width_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox14->Text != "")
+	if (Temperature_textBox->Text != "")
 	{
-		textBox14->BackColor = Color::FromArgb(192, 255, 192);
+		Temperature_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (textBox15->Text != "")
+	if (Order_number_textBox->Text != "")
 	{
-		textBox15->BackColor = Color::FromArgb(192, 255, 192);
+		Order_number_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
 
 
@@ -629,71 +629,71 @@ System::Void CostCalculator::CalcForm::Button1_Click(System::Object^ sender, Sys
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::CheckBox5_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Index_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 {
-	if (checkBox5->Checked == true)
+	if (Index_Check_box->Checked == true)
 	{
-		textBox4->Enabled = true;
+		coefficient_textBox->Enabled = true;
 	}
-	else if (checkBox5->Checked == false)
+	else if (Index_Check_box->Checked == false)
 	{
-		textBox4->Enabled = false;
+		coefficient_textBox->Enabled = false;
 	}
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::CheckBox3_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Flange_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 {
-	if (checkBox3->Checked == true)
+	if (Flange_Check_box->Checked == true)
 	{
 
 		double index;
 
-		checkBox4->Checked = false;
-		checkBox6->Enabled = false;
-		checkBox6->Checked = false;
+		Tape_Check_box->Checked = false;
+		Insert_Check_box->Enabled = false;
+		Insert_Check_box->Checked = false;
 
 		label16->Enabled = true;
 		label19->Enabled = true;
 		label20->Enabled = true;
 		label22->Enabled = true;
 
-		textBox12->Enabled = true;
-		textBox14->Enabled = true;
-		textBox15->Enabled = true;
-		textBox16->Enabled = true;
+		Work_cost_main_part_textBox->Enabled = true;
+		Temperature_textBox->Enabled = true;
+		Order_number_textBox->Enabled = true;
+		Length1_Silicone_textBox->Enabled = true;
 
-		button4->Enabled = true;
-		button6->Enabled = true;
+		Select_layer_count_button->Enabled = true;
+		Input_count_button->Enabled = true;
 
 		treeView1->Enabled = true;
 		treeView3->Enabled = true;
 
-		if (checkBox1->Checked == true)
+		if (Circle_Check_box->Checked == true)
 		{
 			index = 1.2;
-			textBox4->Text = System::Convert::ToString(index);
+			coefficient_textBox->Text = System::Convert::ToString(index);
 		}
-		else if (checkBox2->Checked == true)
+		else if (Rectangle_Check_box->Checked == true)
 		{
 			index = 1.1;
-			textBox4->Text = System::Convert::ToString(index);
+			coefficient_textBox->Text = System::Convert::ToString(index);
 		}
 	}
-	else if (checkBox3->Checked == false)
+	else if (Flange_Check_box->Checked == false)
 	{
 
 		label19->Enabled = false;
 		label20->Enabled = false;
 		label22->Enabled = false;
 
-		textBox12->Enabled = false;
-		textBox14->Enabled = false;
-		textBox15->Enabled = false;
-		textBox16->Enabled = false;
+		Work_cost_main_part_textBox->Enabled = false;
+		Temperature_textBox->Enabled = false;
+		Order_number_textBox->Enabled = false;
+		Length1_Silicone_textBox->Enabled = false;
 
-		button4->Enabled = false;
-		button6->Enabled = false;
+		Select_layer_count_button->Enabled = false;
+		Input_count_button->Enabled = false;
 
 		treeView1->Enabled = false;
 		treeView3->Enabled = false;
@@ -701,45 +701,45 @@ System::Void CostCalculator::CalcForm::CheckBox3_CheckedChanged(System::Object^ 
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::CheckBox4_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Tape_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 {
-	if (checkBox4->Checked == true)
+	if (Tape_Check_box->Checked == true)
 	{
 
 		double index;
 
-		checkBox3->Checked = false;
+		Flange_Check_box->Checked = false;
 
-		checkBox6->Enabled = true;
+		Insert_Check_box->Enabled = true;
 
 		label16->Enabled = true;
 		label19->Enabled = true;
 		label20->Enabled = true;
 		label22->Enabled = true;
 
-		textBox12->Enabled = true;
-		textBox14->Enabled = true;
-		textBox15->Enabled = true;
-		textBox16->Enabled = true;
+		Work_cost_main_part_textBox->Enabled = true;
+		Temperature_textBox->Enabled = true;
+		Order_number_textBox->Enabled = true;
+		Length1_Silicone_textBox->Enabled = true;
 
-		button4->Enabled = true;
-		button6->Enabled = true;
+		Select_layer_count_button->Enabled = true;
+		Input_count_button->Enabled = true;
 
 		treeView1->Enabled = true;
 		treeView3->Enabled = true;
 
-		if (checkBox1->Checked == true)
+		if (Circle_Check_box->Checked == true)
 		{
 			index = 1.15;
-			textBox4->Text = System::Convert::ToString(index);
+			coefficient_textBox->Text = System::Convert::ToString(index);
 		}
-		else if (checkBox2->Checked == true)
+		else if (Rectangle_Check_box->Checked == true)
 		{
 			index = 1.15;
-			textBox4->Text = System::Convert::ToString(index);
+			coefficient_textBox->Text = System::Convert::ToString(index);
 		}
 	}
-	else if (checkBox4->Checked == false)
+	else if (Tape_Check_box->Checked == false)
 	{
 
 
@@ -747,13 +747,13 @@ System::Void CostCalculator::CalcForm::CheckBox4_CheckedChanged(System::Object^ 
 		label20->Enabled = false;
 		label22->Enabled = false;
 
-		textBox12->Enabled = false;
-		textBox14->Enabled = false;
-		textBox15->Enabled = false;
-		textBox16->Enabled = false;
+		Work_cost_main_part_textBox->Enabled = false;
+		Temperature_textBox->Enabled = false;
+		Order_number_textBox->Enabled = false;
+		Length1_Silicone_textBox->Enabled = false;
 
-		button4->Enabled = false;
-		button6->Enabled = false;
+		Select_layer_count_button->Enabled = false;
+		Input_count_button->Enabled = false;
 
 		treeView1->Enabled = false;
 		treeView3->Enabled = false;
@@ -763,9 +763,9 @@ System::Void CostCalculator::CalcForm::CheckBox4_CheckedChanged(System::Object^ 
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::CheckBox6_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Insert_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 {
-	if (checkBox6->Checked == true)
+	if (Insert_Check_box->Checked == true)
 	{
 
 		label11->Enabled = true;
@@ -775,15 +775,15 @@ System::Void CostCalculator::CalcForm::CheckBox6_CheckedChanged(System::Object^ 
 		label15->Enabled = true;
 		label17->Enabled = true;
 
-		textBox8->Enabled = true;
-		textBox9->Enabled = true;
-		textBox10->Enabled = true;
-		textBox11->Enabled = true;
-		textBox13->Enabled = true;
+		Insert_Length1_textBox->Enabled = true;
+		Insert_width_textBox->Enabled = true;
+		Insert_height_textBox->Enabled = true;
+		Length1_textBox1->Enabled = true;
+		Length1_Width_textBox->Enabled = true;
 
 		treeView2->Enabled = true;
 	}
-	else if (checkBox6->Checked == false)
+	else if (Insert_Check_box->Checked == false)
 	{
 		label11->Enabled = false;
 		label12->Enabled = false;
@@ -792,38 +792,38 @@ System::Void CostCalculator::CalcForm::CheckBox6_CheckedChanged(System::Object^ 
 		label15->Enabled = false;
 		label17->Enabled = false;
 
-		textBox8->Enabled = false;
-		textBox9->Enabled = false;
-		textBox10->Enabled = false;
-		textBox11->Enabled = false;
-		textBox13->Enabled = false;
+		Insert_Length1_textBox->Enabled = false;
+		Insert_width_textBox->Enabled = false;
+		Insert_height_textBox->Enabled = false;
+		Length1_textBox1->Enabled = false;
+		Length1_Width_textBox->Enabled = false;
 		treeView2->Enabled = false;
 	}
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::Button3_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Create_print_file_button_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	
-	String^ temperature = textBox14->Text;
+	String^ temperature = Temperature_textBox->Text;
 	string temperatureNew = msclr::interop::marshal_as<std::string>(temperature);
 
 
-	String^ Onumber = textBox15->Text;
+	String^ Onumber = Order_number_textBox->Text;
 	string OnumberNew = msclr::interop::marshal_as<std::string>(Onumber);
 	String^ outputSize;
-	if (checkBox1->Checked == true) {
+	if (Circle_Check_box->Checked == true) {
 		
-		int diameter = System::Convert::ToDouble(textBox1->Text) / 1000;
-		int width = System::Convert::ToDouble(textBox3->Text) / 1000;
+		int diameter = System::Convert::ToDouble(Length1_textBox->Text) / 1000;
+		int width = System::Convert::ToDouble(Width_textBox->Text) / 1000;
 		outputSize = System::Convert::ToString(diameter + "*" + width);
 	}
 	
-	if (checkBox2->Checked == true) {
+	if (Rectangle_Check_box->Checked == true) {
 
-		int length1 = System::Convert::ToDouble(textBox1->Text) / 1000;
-		int length2 = length2 = System::Convert::ToDouble(textBox5->Text) / 1000;
-		int width = System::Convert::ToDouble(textBox3->Text) / 1000;
+		int length1 = System::Convert::ToDouble(Length1_textBox->Text) / 1000;
+		int length2 = length2 = System::Convert::ToDouble(Length2_textBox->Text) / 1000;
+		int width = System::Convert::ToDouble(Width_textBox->Text) / 1000;
 		outputSize = System::Convert::ToString(length1 + "*" + length2 + "*" + width);
 	}
 	
@@ -907,7 +907,7 @@ System::Void CostCalculator::CalcForm::Button3_Click(System::Object^ sender, Sys
 		}
 	}
 
-	if (checkBox6->Checked == true)
+	if (Insert_Check_box->Checked == true)
 	{
 		ArrN = 1;
 		wordpass << "Inner side materials/Материалы внутренней части:" << endl;
@@ -936,12 +936,12 @@ System::Void CostCalculator::CalcForm::Button3_Click(System::Object^ sender, Sys
 			}
 		}
 	}
-	String^ WorkMain = textBox12->Text;
+	String^ WorkMain = Work_cost_main_part_textBox->Text;
 	string WorkMainNew = msclr::interop::marshal_as<std::string>(WorkMain);
-	String^ WorkAdd = textBox13->Text;
+	String^ WorkAdd = Length1_Width_textBox->Text;
 	string WorkAddNew = msclr::interop::marshal_as<std::string>(WorkAdd);
 	wordpass << "_______________________________________________________________________" << endl;
-	if (checkBox6->Checked == true)
+	if (Insert_Check_box->Checked == true)
 	{
 		wordpass << "Work/Работа\n" << "					 Main part: " << WorkMainNew << " UAH\n" << "					     Insert part: " << WorkAddNew << " UAH\n" << endl;
 	}
@@ -1007,13 +1007,13 @@ System::Void CostCalculator::CalcForm::TreeView2_AfterCheck(System::Object^ send
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::Button4_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Select_layer_count_button_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	treeView4->Nodes->Clear();
 	treeView1->Visible = false;
 	treeView4->Visible = true;
-	button4->Visible = false;
-	button5->Visible = true;
+	Select_layer_count_button->Visible = false;
+	Select_layer_button->Visible = true;
 
 	int ArrN = 0;
 	String^ materials;
@@ -1047,12 +1047,12 @@ System::Void CostCalculator::CalcForm::Button4_Click(System::Object^ sender, Sys
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::Button5_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Select_layer_button_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	treeView1->Visible = true;
 	treeView4->Visible = false;
-	button4->Visible = true;
-	button5->Visible = false;
+	Select_layer_count_button->Visible = true;
+	Select_layer_button->Visible = false;
 	return System::Void();
 }
 
@@ -1062,7 +1062,7 @@ System::Void CostCalculator::CalcForm::TreeView4_AfterSelect(System::Object^ sen
 	return System::Void();
 }
 
-System::Void CostCalculator::CalcForm::TextBox16_Enter(System::Object^ sender, System::EventArgs^ e)
+System::Void CostCalculator::CalcForm::Length1_Silicone_textBox_Enter(System::Object^ sender, System::EventArgs^ e)
 {
 	String^ Layoutname = label21->Text;
 	CountPNodes = treeView1->GetNodeCount(false);
@@ -1077,7 +1077,7 @@ System::Void CostCalculator::CalcForm::TextBox16_Enter(System::Object^ sender, S
 				{
 					if (treeView1->Nodes[i]->Nodes[n]->Text == Layoutname)
 					{
-						treeView1->Nodes[i]->Nodes[n]->ToolTipText = System::Convert::ToString(textBox16->Text);
+						treeView1->Nodes[i]->Nodes[n]->ToolTipText = System::Convert::ToString(Length1_Silicone_textBox->Text);
 
 					}
 				}
@@ -1113,7 +1113,7 @@ System::Void CostCalculator::CalcForm::TreeView3_AfterCheck(System::Object^ send
 
 System::Void CostCalculator::CalcForm::label21_TextChanged(System::Object^ sender, System::EventArgs^ e)
 {
-	textBox16->Text = "";
+	Length1_Silicone_textBox->Text = "";
 	return System::Void();
 }
 

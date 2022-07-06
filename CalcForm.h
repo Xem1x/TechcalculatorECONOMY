@@ -49,72 +49,75 @@ namespace CostCalculator {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::CheckBox^ checkBox1;
+	private: System::Windows::Forms::CheckBox^ Circle_Check_box;
+	private: System::Windows::Forms::CheckBox^ Rectangle_Check_box;
 	protected:
-	private: System::Windows::Forms::CheckBox^ checkBox2;
 
-	private: System::Windows::Forms::TextBox^ textBox1;
+	protected:
+
+
+	private: System::Windows::Forms::TextBox^ Length1_textBox;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::TextBox^ Flange_width_textBox;
 
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ Calculate_button;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
 
-	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::TextBox^ Width_textBox;
 
-	private: System::Windows::Forms::TextBox^ textBox5;
+	private: System::Windows::Forms::TextBox^ Length2_textBox;
 
 
 	private: System::Windows::Forms::Label^ label8;
 
 
-	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ Set_second_length_same_button;
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::TreeView^ treeView1;
-	private: System::Windows::Forms::CheckBox^ checkBox3;
-	private: System::Windows::Forms::CheckBox^ checkBox4;
+	private: System::Windows::Forms::CheckBox^ Flange_Check_box;
+	private: System::Windows::Forms::CheckBox^ Tape_Check_box;
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label10;
-	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::TextBox^ coefficient_textBox;
 	private: System::Windows::Forms::TextBox^ textBox7;
-	private: System::Windows::Forms::CheckBox^ checkBox5;
-	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::CheckBox^ Index_Check_box;
+	private: System::Windows::Forms::TextBox^ Silicone_textBox;
 	private: System::Windows::Forms::Label^ label9;
-	private: System::Windows::Forms::CheckBox^ checkBox6;
+	private: System::Windows::Forms::CheckBox^ Insert_Check_box;
 	private: System::Windows::Forms::Label^ label11;
-	private: System::Windows::Forms::TextBox^ textBox8;
+	private: System::Windows::Forms::TextBox^ Insert_Length1_textBox;
 	private: System::Windows::Forms::Label^ label12;
-	private: System::Windows::Forms::TextBox^ textBox9;
+	private: System::Windows::Forms::TextBox^ Insert_width_textBox;
 	private: System::Windows::Forms::Label^ label13;
 	private: System::Windows::Forms::Label^ label14;
-	private: System::Windows::Forms::TextBox^ textBox10;
-	private: System::Windows::Forms::TextBox^ textBox11;
+	private: System::Windows::Forms::TextBox^ Insert_height_textBox;
+	private: System::Windows::Forms::TextBox^ Length1_textBox1;
 	private: System::Windows::Forms::Label^ label15;
 	private: System::Windows::Forms::Label^ label16;
-	private: System::Windows::Forms::TextBox^ textBox12;
+	private: System::Windows::Forms::TextBox^ Work_cost_main_part_textBox;
 
-	private: System::Windows::Forms::TextBox^ textBox13;
+	private: System::Windows::Forms::TextBox^ Length1_Width_textBox;
 	private: System::Windows::Forms::Label^ label17;
 
-	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ Create_print_file_button;
 	private: System::Windows::Forms::TreeView^ treeView2;
 
 	private: System::Windows::Forms::Label^ label19;
-	private: System::Windows::Forms::TextBox^ textBox14;
+	private: System::Windows::Forms::TextBox^ Temperature_textBox;
 	private: System::Windows::Forms::Label^ label20;
-	private: System::Windows::Forms::TextBox^ textBox15;
+	private: System::Windows::Forms::TextBox^ Order_number_textBox;
 	private: System::Windows::Forms::TreeView^ treeView3;
-	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ Select_layer_count_button;
 	private: System::Windows::Forms::TreeView^ treeView4;
-	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ Select_layer_button;
 
 	private: System::Windows::Forms::Label^ label22;
-	private: System::Windows::Forms::TextBox^ textBox16;
+	private: System::Windows::Forms::TextBox^ Length1_Silicone_textBox;
 
-	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Button^ Input_count_button;
 
 	private: System::Windows::Forms::Label^ label21;
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
@@ -141,135 +144,135 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::TreeNode^ treeNode58 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 0.6mm Temperature 550C              250UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode59 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode60 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode61 = (gcnew System::Windows::Forms::TreeNode(L"Kevlar 1mm Temperature 400C                                     960UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode62 = (gcnew System::Windows::Forms::TreeNode(L"Iso Therm 800 2mm Temperature 800C                           800UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode63 = (gcnew System::Windows::Forms::TreeNode(L"TXG 2361 1.2mm Temperature 1050C                           1400UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode64 = (gcnew System::Windows::Forms::TreeNode(L"TKT 1000 1.2mm Temperature 1050C                             450UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode65 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode66 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics HT 1000 3mm Temperature 1050C                450UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode67 = (gcnew System::Windows::Forms::TreeNode(L"Проверка"));
-			System::Windows::Forms::TreeNode^ treeNode68 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая", gcnew cli::array< System::Windows::Forms::TreeNode^  >(10) {
-				treeNode58,
-					treeNode59, treeNode60, treeNode61, treeNode62, treeNode63, treeNode64, treeNode65, treeNode66, treeNode67
+			System::Windows::Forms::TreeNode^ treeNode1 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 0.6mm Temperature 550C              250UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode2 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode3 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode4 = (gcnew System::Windows::Forms::TreeNode(L"Kevlar 1mm Temperature 400C                                     960UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode5 = (gcnew System::Windows::Forms::TreeNode(L"Iso Therm 800 2mm Temperature 800C                           800UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode6 = (gcnew System::Windows::Forms::TreeNode(L"TXG 2361 1.2mm Temperature 1050C                           1400UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode7 = (gcnew System::Windows::Forms::TreeNode(L"TKT 1000 1.2mm Temperature 1050C                             450UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode8 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode9 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics HT 1000 3mm Temperature 1050C                450UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode10 = (gcnew System::Windows::Forms::TreeNode(L"Проверка"));
+			System::Windows::Forms::TreeNode^ treeNode11 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая", gcnew cli::array< System::Windows::Forms::TreeNode^  >(10) {
+				treeNode1,
+					treeNode2, treeNode3, treeNode4, treeNode5, treeNode6, treeNode7, treeNode8, treeNode9, treeNode10
 			}));
-			System::Windows::Forms::TreeNode^ treeNode69 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082442-1EJ1 0.6mm Temperature 180C            700UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode70 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082444-1EJ2 0.4mm Temperature 180C            460UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode71 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082444-1EJ1 0.4mm Temperature 180C            350UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode72 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082620-0EJ2 0.75mm Temperature 180C          800UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode73 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082930 1.2mm Temperature 180C                   1700UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode74 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082910 1.2mm Temperature 180C                   1200UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode75 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082930 1.2mm Temperature 180C                   1700UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode76 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082448 0.4mm Temperature 180C                     350UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode77 = (gcnew System::Windows::Forms::TreeNode(L"Borolon 1.2mm Temperature 180C                              1200UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode78 = (gcnew System::Windows::Forms::TreeNode(L"Oligocen 0.4mm Temperature 180C                               1200UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode79 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая с силиконовым покрытием",
+			System::Windows::Forms::TreeNode^ treeNode12 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082442-1EJ1 0.6mm Temperature 180C            700UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode13 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082444-1EJ2 0.4mm Temperature 180C            460UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode14 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082444-1EJ1 0.4mm Temperature 180C            350UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode15 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082620-0EJ2 0.75mm Temperature 180C          800UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode16 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082930 1.2mm Temperature 180C                   1700UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode17 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082910 1.2mm Temperature 180C                   1200UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode18 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082930 1.2mm Temperature 180C                   1700UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode19 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082448 0.4mm Temperature 180C                     350UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode20 = (gcnew System::Windows::Forms::TreeNode(L"Borolon 1.2mm Temperature 180C                              1200UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode21 = (gcnew System::Windows::Forms::TreeNode(L"Oligocen 0.4mm Temperature 180C                               1200UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode22 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая с силиконовым покрытием",
 				gcnew cli::array< System::Windows::Forms::TreeNode^  >(10) {
-				treeNode69, treeNode70, treeNode71, treeNode72, treeNode73, treeNode74,
-					treeNode75, treeNode76, treeNode77, treeNode78
+				treeNode12, treeNode13, treeNode14, treeNode15, treeNode16, treeNode17,
+					treeNode18, treeNode19, treeNode20, treeNode21
 			}));
-			System::Windows::Forms::TreeNode^ treeNode80 = (gcnew System::Windows::Forms::TreeNode(L"Fibertex 500 0.4mm Temperature 310C                          1200UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode81 = (gcnew System::Windows::Forms::TreeNode(L"Fibertex 1000 0.9mm Temperature 310C                        1800UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode82 = (gcnew System::Windows::Forms::TreeNode(L"Chemiflex 14 0.4mm Temperature 310C                           980UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode83 = (gcnew System::Windows::Forms::TreeNode(L"440-1SC 0.4mm Temperature 310C                                  880UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode84 = (gcnew System::Windows::Forms::TreeNode(L"Fibertex 501 0.45mm Temperature 310C                        2000UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode85 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая с PTFE покрытием",
-				gcnew cli::array< System::Windows::Forms::TreeNode^  >(5) { treeNode80, treeNode81, treeNode82, treeNode83, treeNode84 }));
-			System::Windows::Forms::TreeNode^ treeNode86 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 12.5mm Temperature 550C                         200UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode87 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая иглопробивная термостойкая",
-				gcnew cli::array< System::Windows::Forms::TreeNode^  >(1) { treeNode86 }));
-			System::Windows::Forms::TreeNode^ treeNode88 = (gcnew System::Windows::Forms::TreeNode(L"Пленка PTFE 0.2mm               350UAH/m^2 "));
-			System::Windows::Forms::TreeNode^ treeNode89 = (gcnew System::Windows::Forms::TreeNode(L"Net/Сетка Н/Ж  0.4mm                  350UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode90 = (gcnew System::Windows::Forms::TreeNode(L"GlassFabric steel 0.3mm        2200UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode91 = (gcnew System::Windows::Forms::TreeNode(L"Прочее", gcnew cli::array< System::Windows::Forms::TreeNode^  >(3) {
-				treeNode88,
-					treeNode89, treeNode90
+			System::Windows::Forms::TreeNode^ treeNode23 = (gcnew System::Windows::Forms::TreeNode(L"Fibertex 500 0.4mm Temperature 310C                          1200UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode24 = (gcnew System::Windows::Forms::TreeNode(L"Fibertex 1000 0.9mm Temperature 310C                        1800UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode25 = (gcnew System::Windows::Forms::TreeNode(L"Chemiflex 14 0.4mm Temperature 310C                           980UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode26 = (gcnew System::Windows::Forms::TreeNode(L"440-1SC 0.4mm Temperature 310C                                  880UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode27 = (gcnew System::Windows::Forms::TreeNode(L"Fibertex 501 0.45mm Temperature 310C                        2000UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode28 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая с PTFE покрытием",
+				gcnew cli::array< System::Windows::Forms::TreeNode^  >(5) { treeNode23, treeNode24, treeNode25, treeNode26, treeNode27 }));
+			System::Windows::Forms::TreeNode^ treeNode29 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 12.5mm Temperature 550C                         200UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode30 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая иглопробивная термостойкая",
+				gcnew cli::array< System::Windows::Forms::TreeNode^  >(1) { treeNode29 }));
+			System::Windows::Forms::TreeNode^ treeNode31 = (gcnew System::Windows::Forms::TreeNode(L"Пленка PTFE 0.2mm               350UAH/m^2 "));
+			System::Windows::Forms::TreeNode^ treeNode32 = (gcnew System::Windows::Forms::TreeNode(L"Net/Сетка Н/Ж  0.4mm                  350UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode33 = (gcnew System::Windows::Forms::TreeNode(L"GlassFabric steel 0.3mm        2200UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode34 = (gcnew System::Windows::Forms::TreeNode(L"Прочее", gcnew cli::array< System::Windows::Forms::TreeNode^  >(3) {
+				treeNode31,
+					treeNode32, treeNode33
 			}));
-			System::Windows::Forms::TreeNode^ treeNode92 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glass 550 12,5mm Temperature <500C  250UAH/m^3"));
-			System::Windows::Forms::TreeNode^ treeNode93 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics 12mm Temperature <1000C 15000UAH/m^3"));
-			System::Windows::Forms::TreeNode^ treeNode94 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics 25mm Temperature <1000C 9000UAH/m^3"));
-			System::Windows::Forms::TreeNode^ treeNode95 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics 50mm Temperature <1000C 7000UAH/m^3"));
-			System::Windows::Forms::TreeNode^ treeNode96 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая иглопробивная термостойкая",
-				gcnew cli::array< System::Windows::Forms::TreeNode^  >(4) { treeNode92, treeNode93, treeNode94, treeNode95 }));
-			System::Windows::Forms::TreeNode^ treeNode97 = (gcnew System::Windows::Forms::TreeNode(L"Внтуренняя часть(м^3)", gcnew cli::array< System::Windows::Forms::TreeNode^  >(1) { treeNode96 }));
-			System::Windows::Forms::TreeNode^ treeNode98 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode99 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode100 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode101 = (gcnew System::Windows::Forms::TreeNode(L"Iso Therm 800 2mm Temperature 800C                           800UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode102 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics HT 1000 3mm Temperature 1050C                450UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode103 = (gcnew System::Windows::Forms::TreeNode(L"TXG 2361 1.2mm Temperature 1050C                           1400UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode104 = (gcnew System::Windows::Forms::TreeNode(L"TKT 1000 1.2mm Temperature 1050C                             450UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode105 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая", gcnew cli::array< System::Windows::Forms::TreeNode^  >(7) {
-				treeNode98,
-					treeNode99, treeNode100, treeNode101, treeNode102, treeNode103, treeNode104
+			System::Windows::Forms::TreeNode^ treeNode35 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glass 550 12,5mm Temperature <500C  250UAH/m^3"));
+			System::Windows::Forms::TreeNode^ treeNode36 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics 12mm Temperature <1000C 15000UAH/m^3"));
+			System::Windows::Forms::TreeNode^ treeNode37 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics 25mm Temperature <1000C 9000UAH/m^3"));
+			System::Windows::Forms::TreeNode^ treeNode38 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics 50mm Temperature <1000C 7000UAH/m^3"));
+			System::Windows::Forms::TreeNode^ treeNode39 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая иглопробивная термостойкая",
+				gcnew cli::array< System::Windows::Forms::TreeNode^  >(4) { treeNode35, treeNode36, treeNode37, treeNode38 }));
+			System::Windows::Forms::TreeNode^ treeNode40 = (gcnew System::Windows::Forms::TreeNode(L"Внтуренняя часть(м^3)", gcnew cli::array< System::Windows::Forms::TreeNode^  >(1) { treeNode39 }));
+			System::Windows::Forms::TreeNode^ treeNode41 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode42 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode43 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode44 = (gcnew System::Windows::Forms::TreeNode(L"Iso Therm 800 2mm Temperature 800C                           800UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode45 = (gcnew System::Windows::Forms::TreeNode(L"Ceramics HT 1000 3mm Temperature 1050C                450UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode46 = (gcnew System::Windows::Forms::TreeNode(L"TXG 2361 1.2mm Temperature 1050C                           1400UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode47 = (gcnew System::Windows::Forms::TreeNode(L"TKT 1000 1.2mm Temperature 1050C                             450UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode48 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая", gcnew cli::array< System::Windows::Forms::TreeNode^  >(7) {
+				treeNode41,
+					treeNode42, treeNode43, treeNode44, treeNode45, treeNode46, treeNode47
 			}));
-			System::Windows::Forms::TreeNode^ treeNode106 = (gcnew System::Windows::Forms::TreeNode(L"Внешняя часть(м^2)", gcnew cli::array< System::Windows::Forms::TreeNode^  >(1) { treeNode105 }));
-			System::Windows::Forms::TreeNode^ treeNode107 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 0.6mm Temperature 550C              250UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode108 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode109 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode110 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode111 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая", gcnew cli::array< System::Windows::Forms::TreeNode^  >(4) {
-				treeNode107,
-					treeNode108, treeNode109, treeNode110
+			System::Windows::Forms::TreeNode^ treeNode49 = (gcnew System::Windows::Forms::TreeNode(L"Внешняя часть(м^2)", gcnew cli::array< System::Windows::Forms::TreeNode^  >(1) { treeNode48 }));
+			System::Windows::Forms::TreeNode^ treeNode50 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 0.6mm Temperature 550C              250UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode51 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode52 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode53 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode54 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая", gcnew cli::array< System::Windows::Forms::TreeNode^  >(4) {
+				treeNode50,
+					treeNode51, treeNode52, treeNode53
 			}));
-			System::Windows::Forms::TreeNode^ treeNode112 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082444-1EJ2 0.4mm Temperature 180C            460UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode113 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082444-1EJ1 0.4mm Temperature 180C            350UAH/m^2"));
-			System::Windows::Forms::TreeNode^ treeNode114 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая с силиконовым покрытием",
-				gcnew cli::array< System::Windows::Forms::TreeNode^  >(2) { treeNode112, treeNode113 }));
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			System::Windows::Forms::TreeNode^ treeNode55 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082444-1EJ2 0.4mm Temperature 180C            460UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode56 = (gcnew System::Windows::Forms::TreeNode(L"Iso Glas 082444-1EJ1 0.4mm Temperature 180C            350UAH/m^2"));
+			System::Windows::Forms::TreeNode^ treeNode57 = (gcnew System::Windows::Forms::TreeNode(L"Ткань техническая термостойкая с силиконовым покрытием",
+				gcnew cli::array< System::Windows::Forms::TreeNode^  >(2) { treeNode55, treeNode56 }));
+			this->Circle_Check_box = (gcnew System::Windows::Forms::CheckBox());
+			this->Rectangle_Check_box = (gcnew System::Windows::Forms::CheckBox());
+			this->Length1_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->Flange_width_textBox = (gcnew System::Windows::Forms::TextBox());
+			this->Calculate_button = (gcnew System::Windows::Forms::Button());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->Width_textBox = (gcnew System::Windows::Forms::TextBox());
+			this->Length2_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->Set_second_length_same_button = (gcnew System::Windows::Forms::Button());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->treeView1 = (gcnew System::Windows::Forms::TreeView());
-			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
+			this->Flange_Check_box = (gcnew System::Windows::Forms::CheckBox());
+			this->Tape_Check_box = (gcnew System::Windows::Forms::CheckBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->coefficient_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
-			this->checkBox5 = (gcnew System::Windows::Forms::CheckBox());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->Index_Check_box = (gcnew System::Windows::Forms::CheckBox());
+			this->Silicone_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->checkBox6 = (gcnew System::Windows::Forms::CheckBox());
+			this->Insert_Check_box = (gcnew System::Windows::Forms::CheckBox());
 			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
+			this->Insert_Length1_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->label12 = (gcnew System::Windows::Forms::Label());
-			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
+			this->Insert_width_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
+			this->Insert_height_textBox = (gcnew System::Windows::Forms::TextBox());
+			this->Length1_textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->label16 = (gcnew System::Windows::Forms::Label());
-			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox13 = (gcnew System::Windows::Forms::TextBox());
+			this->Work_cost_main_part_textBox = (gcnew System::Windows::Forms::TextBox());
+			this->Length1_Width_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->label17 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->Create_print_file_button = (gcnew System::Windows::Forms::Button());
 			this->treeView2 = (gcnew System::Windows::Forms::TreeView());
 			this->label19 = (gcnew System::Windows::Forms::Label());
-			this->textBox14 = (gcnew System::Windows::Forms::TextBox());
+			this->Temperature_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->label20 = (gcnew System::Windows::Forms::Label());
-			this->textBox15 = (gcnew System::Windows::Forms::TextBox());
+			this->Order_number_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->treeView3 = (gcnew System::Windows::Forms::TreeView());
-			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->Select_layer_count_button = (gcnew System::Windows::Forms::Button());
 			this->treeView4 = (gcnew System::Windows::Forms::TreeView());
-			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->Select_layer_button = (gcnew System::Windows::Forms::Button());
 			this->label22 = (gcnew System::Windows::Forms::Label());
-			this->textBox16 = (gcnew System::Windows::Forms::TextBox());
-			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->Length1_Silicone_textBox = (gcnew System::Windows::Forms::TextBox());
+			this->Input_count_button = (gcnew System::Windows::Forms::Button());
 			this->label21 = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->конфигурацияToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -283,47 +286,47 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->eventLog1))->BeginInit();
 			this->SuspendLayout();
 			// 
-			// checkBox1
+			// Circle_Check_box
 			// 
-			this->checkBox1->AutoSize = true;
-			this->checkBox1->BackColor = System::Drawing::SystemColors::Window;
-			this->checkBox1->Cursor = System::Windows::Forms::Cursors::Arrow;
-			this->checkBox1->FlatAppearance->BorderSize = 0;
-			this->checkBox1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Circle_Check_box->AutoSize = true;
+			this->Circle_Check_box->BackColor = System::Drawing::SystemColors::Window;
+			this->Circle_Check_box->Cursor = System::Windows::Forms::Cursors::Arrow;
+			this->Circle_Check_box->FlatAppearance->BorderSize = 0;
+			this->Circle_Check_box->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Circle_Check_box->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox1->Location = System::Drawing::Point(70, 78);
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(94, 23);
-			this->checkBox1->TabIndex = 0;
-			this->checkBox1->Text = L"Круглый";
-			this->checkBox1->UseVisualStyleBackColor = false;
-			this->checkBox1->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::CheckBox1_CheckedChanged);
+			this->Circle_Check_box->Location = System::Drawing::Point(70, 78);
+			this->Circle_Check_box->Name = L"Circle_Check_box";
+			this->Circle_Check_box->Size = System::Drawing::Size(94, 23);
+			this->Circle_Check_box->TabIndex = 0;
+			this->Circle_Check_box->Text = L"Круглый";
+			this->Circle_Check_box->UseVisualStyleBackColor = false;
+			this->Circle_Check_box->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::Circle_Check_box_CheckedChanged);
 			// 
-			// checkBox2
+			// Rectangle_Check_box
 			// 
-			this->checkBox2->AutoSize = true;
-			this->checkBox2->BackColor = System::Drawing::SystemColors::Window;
-			this->checkBox2->FlatAppearance->BorderSize = 0;
-			this->checkBox2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->checkBox2->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Rectangle_Check_box->AutoSize = true;
+			this->Rectangle_Check_box->BackColor = System::Drawing::SystemColors::Window;
+			this->Rectangle_Check_box->FlatAppearance->BorderSize = 0;
+			this->Rectangle_Check_box->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Rectangle_Check_box->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox2->Location = System::Drawing::Point(70, 138);
-			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->Size = System::Drawing::Size(156, 23);
-			this->checkBox2->TabIndex = 1;
-			this->checkBox2->Text = L"Прямоугольный";
-			this->checkBox2->UseVisualStyleBackColor = false;
-			this->checkBox2->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::CheckBox2_CheckedChanged);
+			this->Rectangle_Check_box->Location = System::Drawing::Point(70, 138);
+			this->Rectangle_Check_box->Name = L"Rectangle_Check_box";
+			this->Rectangle_Check_box->Size = System::Drawing::Size(156, 23);
+			this->Rectangle_Check_box->TabIndex = 1;
+			this->Rectangle_Check_box->Text = L"Прямоугольный";
+			this->Rectangle_Check_box->UseVisualStyleBackColor = false;
+			this->Rectangle_Check_box->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::Rectangle_Check_box_CheckedChanged);
 			// 
-			// textBox1
+			// Length1_textBox
 			// 
-			this->textBox1->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox1->Enabled = false;
-			this->textBox1->Location = System::Drawing::Point(183, 221);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(92, 20);
-			this->textBox1->TabIndex = 3;
+			this->Length1_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Length1_textBox->Enabled = false;
+			this->Length1_textBox->Location = System::Drawing::Point(183, 221);
+			this->Length1_textBox->Name = L"Length1_textBox";
+			this->Length1_textBox->Size = System::Drawing::Size(92, 20);
+			this->Length1_textBox->TabIndex = 3;
 			// 
 			// label1
 			// 
@@ -363,34 +366,34 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label3->TabIndex = 6;
 			this->label3->Text = L"Размер фланца:";
 			// 
-			// textBox2
+			// Flange_width_textBox
 			// 
-			this->textBox2->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox2->Enabled = false;
-			this->textBox2->Location = System::Drawing::Point(125, 355);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(92, 20);
-			this->textBox2->TabIndex = 7;
+			this->Flange_width_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Flange_width_textBox->Enabled = false;
+			this->Flange_width_textBox->Location = System::Drawing::Point(125, 355);
+			this->Flange_width_textBox->Name = L"Flange_width_textBox";
+			this->Flange_width_textBox->Size = System::Drawing::Size(92, 20);
+			this->Flange_width_textBox->TabIndex = 7;
 			// 
-			// button1
+			// Calculate_button
 			// 
-			this->button1->BackColor = System::Drawing::SystemColors::Window;
-			this->button1->FlatAppearance->BorderColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->button1->FlatAppearance->BorderSize = 0;
-			this->button1->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
+			this->Calculate_button->BackColor = System::Drawing::SystemColors::Window;
+			this->Calculate_button->FlatAppearance->BorderColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->Calculate_button->FlatAppearance->BorderSize = 0;
+			this->Calculate_button->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->button1->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
-			this->button1->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
-			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button1->ImageKey = L"(none)";
-			this->button1->Location = System::Drawing::Point(727, 634);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(149, 52);
-			this->button1->TabIndex = 9;
-			this->button1->Text = L"Рассчитать";
-			this->button1->UseVisualStyleBackColor = false;
-			this->button1->Click += gcnew System::EventHandler(this, &CalcForm::Button1_Click);
+			this->Calculate_button->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
+			this->Calculate_button->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
+			this->Calculate_button->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->Calculate_button->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->Calculate_button->ImageKey = L"(none)";
+			this->Calculate_button->Location = System::Drawing::Point(727, 634);
+			this->Calculate_button->Name = L"Calculate_button";
+			this->Calculate_button->Size = System::Drawing::Size(149, 52);
+			this->Calculate_button->TabIndex = 9;
+			this->Calculate_button->Text = L"Рассчитать";
+			this->Calculate_button->UseVisualStyleBackColor = false;
+			this->Calculate_button->Click += gcnew System::EventHandler(this, &CalcForm::Calculate_button_Click);
 			// 
 			// label4
 			// 
@@ -417,23 +420,23 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label5->Text = L"Длина 1 стороны";
 			this->label5->Visible = false;
 			// 
-			// textBox3
+			// Width_textBox
 			// 
-			this->textBox3->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox3->Enabled = false;
-			this->textBox3->Location = System::Drawing::Point(183, 252);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(92, 20);
-			this->textBox3->TabIndex = 13;
+			this->Width_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Width_textBox->Enabled = false;
+			this->Width_textBox->Location = System::Drawing::Point(183, 252);
+			this->Width_textBox->Name = L"Width_textBox";
+			this->Width_textBox->Size = System::Drawing::Size(92, 20);
+			this->Width_textBox->TabIndex = 13;
 			// 
-			// textBox5
+			// Length2_textBox
 			// 
-			this->textBox5->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox5->Enabled = false;
-			this->textBox5->Location = System::Drawing::Point(465, 221);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(92, 20);
-			this->textBox5->TabIndex = 20;
+			this->Length2_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Length2_textBox->Enabled = false;
+			this->Length2_textBox->Location = System::Drawing::Point(465, 221);
+			this->Length2_textBox->Name = L"Length2_textBox";
+			this->Length2_textBox->Size = System::Drawing::Size(92, 20);
+			this->Length2_textBox->TabIndex = 20;
 			// 
 			// label8
 			// 
@@ -447,25 +450,25 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label8->TabIndex = 17;
 			this->label8->Text = L"Длина 2 стороны";
 			// 
-			// button2
+			// Set_second_length_same_button
 			// 
-			this->button2->BackColor = System::Drawing::SystemColors::Window;
-			this->button2->Enabled = false;
-			this->button2->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
-			this->button2->FlatAppearance->BorderSize = 0;
-			this->button2->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
+			this->Set_second_length_same_button->BackColor = System::Drawing::SystemColors::Window;
+			this->Set_second_length_same_button->Enabled = false;
+			this->Set_second_length_same_button->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
+			this->Set_second_length_same_button->FlatAppearance->BorderSize = 0;
+			this->Set_second_length_same_button->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->button2->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
-			this->button2->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
-			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button2->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button2->Location = System::Drawing::Point(304, 221);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(29, 20);
-			this->button2->TabIndex = 21;
-			this->button2->Text = L"->";
-			this->button2->UseVisualStyleBackColor = false;
-			this->button2->Click += gcnew System::EventHandler(this, &CalcForm::Button2_Click);
+			this->Set_second_length_same_button->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
+			this->Set_second_length_same_button->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
+			this->Set_second_length_same_button->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->Set_second_length_same_button->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->Set_second_length_same_button->Location = System::Drawing::Point(304, 221);
+			this->Set_second_length_same_button->Name = L"Set_second_length_same_button";
+			this->Set_second_length_same_button->Size = System::Drawing::Size(29, 20);
+			this->Set_second_length_same_button->TabIndex = 21;
+			this->Set_second_length_same_button->Text = L"->";
+			this->Set_second_length_same_button->UseVisualStyleBackColor = false;
+			this->Set_second_length_same_button->Click += gcnew System::EventHandler(this, &CalcForm::Set_second_length_same_button_Click);
 			// 
 			// label6
 			// 
@@ -489,105 +492,105 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->treeView1->HideSelection = false;
 			this->treeView1->Location = System::Drawing::Point(606, 37);
 			this->treeView1->Name = L"treeView1";
-			treeNode58->Name = L"Node1";
-			treeNode58->Tag = L"250";
-			treeNode58->Text = L"Iso Glas 550 W2000 0.6mm Temperature 550C              250UAH/m^2";
-			treeNode59->Name = L"Node2";
-			treeNode59->Tag = L"300";
-			treeNode59->Text = L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2";
-			treeNode60->Name = L"Node4";
-			treeNode60->Tag = L"850";
-			treeNode60->Text = L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2";
-			treeNode61->Name = L"Node5";
-			treeNode61->Tag = L"960";
-			treeNode61->Text = L"Kevlar 1mm Temperature 400C                                     960UAH/m^2";
-			treeNode62->Name = L"Node6";
-			treeNode62->Tag = L"800";
-			treeNode62->Text = L"Iso Therm 800 2mm Temperature 800C                           800UAH/m^2";
-			treeNode63->Name = L"Node8";
-			treeNode63->Tag = L"1400";
-			treeNode63->Text = L"TXG 2361 1.2mm Temperature 1050C                           1400UAH/m^2";
-			treeNode64->Name = L"Node9";
-			treeNode64->Tag = L"450";
-			treeNode64->Text = L"TKT 1000 1.2mm Temperature 1050C                             450UAH/m^2";
-			treeNode65->Name = L"Node3";
-			treeNode65->Tag = L"450";
-			treeNode65->Text = L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2";
-			treeNode66->Name = L"Node7";
-			treeNode66->Tag = L"450";
-			treeNode66->Text = L"Ceramics HT 1000 3mm Temperature 1050C                450UAH/m^2";
-			treeNode67->Name = L"Узел0";
-			treeNode67->Text = L"Проверка";
-			treeNode68->Name = L"Node1";
-			treeNode68->Text = L"Ткань техническая термостойкая";
-			treeNode69->Name = L"Node1";
-			treeNode69->Tag = L"700";
-			treeNode69->Text = L"Iso Glas 082442-1EJ1 0.6mm Temperature 180C            700UAH/m^2";
-			treeNode70->Name = L"Node2";
-			treeNode70->Tag = L"460";
-			treeNode70->Text = L"Iso Glas 082444-1EJ2 0.4mm Temperature 180C            460UAH/m^2";
-			treeNode71->Name = L"Node3";
-			treeNode71->Tag = L"350";
-			treeNode71->Text = L"Iso Glas 082444-1EJ1 0.4mm Temperature 180C            350UAH/m^2";
-			treeNode72->Name = L"Node4";
-			treeNode72->Tag = L"800";
-			treeNode72->Text = L"Iso Glas 082620-0EJ2 0.75mm Temperature 180C          800UAH/m^2";
-			treeNode73->Name = L"Node5";
-			treeNode73->Tag = L"1700";
-			treeNode73->Text = L"Iso Glas 082930 1.2mm Temperature 180C                   1700UAH/m^2";
-			treeNode74->Name = L"Node6";
-			treeNode74->Tag = L"1200";
-			treeNode74->Text = L"Iso Glas 082910 1.2mm Temperature 180C                   1200UAH/m^2";
-			treeNode75->Name = L"Node7";
-			treeNode75->Tag = L"1700";
-			treeNode75->Text = L"Iso Glas 082930 1.2mm Temperature 180C                   1700UAH/m^2";
-			treeNode76->Name = L"Node8";
-			treeNode76->Tag = L"350";
-			treeNode76->Text = L"Iso Glas 082448 0.4mm Temperature 180C                     350UAH/m^2";
-			treeNode77->Name = L"Node9";
-			treeNode77->Tag = L"1200";
-			treeNode77->Text = L"Borolon 1.2mm Temperature 180C                              1200UAH/m^2";
-			treeNode78->Name = L"Node10";
-			treeNode78->Tag = L"1200";
-			treeNode78->Text = L"Oligocen 0.4mm Temperature 180C                               1200UAH/m^2";
-			treeNode79->Name = L"Node6";
-			treeNode79->Text = L"Ткань техническая термостойкая с силиконовым покрытием";
-			treeNode80->Name = L"Node1";
-			treeNode80->Tag = L"1200";
-			treeNode80->Text = L"Fibertex 500 0.4mm Temperature 310C                          1200UAH/m^2";
-			treeNode81->Name = L"Node2";
-			treeNode81->Tag = L"1800";
-			treeNode81->Text = L"Fibertex 1000 0.9mm Temperature 310C                        1800UAH/m^2";
-			treeNode82->Name = L"Node3";
-			treeNode82->Tag = L"980";
-			treeNode82->Text = L"Chemiflex 14 0.4mm Temperature 310C                           980UAH/m^2";
-			treeNode83->Name = L"Node4";
-			treeNode83->Tag = L"880";
-			treeNode83->Text = L"440-1SC 0.4mm Temperature 310C                                  880UAH/m^2";
-			treeNode84->Name = L"Node5";
-			treeNode84->Tag = L"2000";
-			treeNode84->Text = L"Fibertex 501 0.45mm Temperature 310C                        2000UAH/m^2";
-			treeNode85->Name = L"Node2";
-			treeNode85->Text = L"Ткань техническая термостойкая с PTFE покрытием";
-			treeNode86->Name = L"Node1";
-			treeNode86->Tag = L"200";
-			treeNode86->Text = L"Iso Glas 550 12.5mm Temperature 550C                         200UAH/m^2";
-			treeNode87->Name = L"Node3";
-			treeNode87->Text = L"Ткань техническая иглопробивная термостойкая";
-			treeNode88->Name = L"Node5";
-			treeNode88->Tag = L"350";
-			treeNode88->Text = L"Пленка PTFE 0.2mm               350UAH/m^2 ";
-			treeNode89->Name = L"Node4";
-			treeNode89->Tag = L"350";
-			treeNode89->Text = L"Net/Сетка Н/Ж  0.4mm                  350UAH/m^2";
-			treeNode90->Name = L"Node0";
-			treeNode90->Tag = L"2200";
-			treeNode90->Text = L"GlassFabric steel 0.3mm        2200UAH/m^2";
-			treeNode91->Name = L"Node1";
-			treeNode91->Text = L"Прочее";
+			treeNode1->Name = L"Node1";
+			treeNode1->Tag = L"250";
+			treeNode1->Text = L"Iso Glas 550 W2000 0.6mm Temperature 550C              250UAH/m^2";
+			treeNode2->Name = L"Node2";
+			treeNode2->Tag = L"300";
+			treeNode2->Text = L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2";
+			treeNode3->Name = L"Node4";
+			treeNode3->Tag = L"850";
+			treeNode3->Text = L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2";
+			treeNode4->Name = L"Node5";
+			treeNode4->Tag = L"960";
+			treeNode4->Text = L"Kevlar 1mm Temperature 400C                                     960UAH/m^2";
+			treeNode5->Name = L"Node6";
+			treeNode5->Tag = L"800";
+			treeNode5->Text = L"Iso Therm 800 2mm Temperature 800C                           800UAH/m^2";
+			treeNode6->Name = L"Node8";
+			treeNode6->Tag = L"1400";
+			treeNode6->Text = L"TXG 2361 1.2mm Temperature 1050C                           1400UAH/m^2";
+			treeNode7->Name = L"Node9";
+			treeNode7->Tag = L"450";
+			treeNode7->Text = L"TKT 1000 1.2mm Temperature 1050C                             450UAH/m^2";
+			treeNode8->Name = L"Node3";
+			treeNode8->Tag = L"450";
+			treeNode8->Text = L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2";
+			treeNode9->Name = L"Node7";
+			treeNode9->Tag = L"450";
+			treeNode9->Text = L"Ceramics HT 1000 3mm Temperature 1050C                450UAH/m^2";
+			treeNode10->Name = L"Узел0";
+			treeNode10->Text = L"Проверка";
+			treeNode11->Name = L"Node1";
+			treeNode11->Text = L"Ткань техническая термостойкая";
+			treeNode12->Name = L"Node1";
+			treeNode12->Tag = L"700";
+			treeNode12->Text = L"Iso Glas 082442-1EJ1 0.6mm Temperature 180C            700UAH/m^2";
+			treeNode13->Name = L"Node2";
+			treeNode13->Tag = L"460";
+			treeNode13->Text = L"Iso Glas 082444-1EJ2 0.4mm Temperature 180C            460UAH/m^2";
+			treeNode14->Name = L"Node3";
+			treeNode14->Tag = L"350";
+			treeNode14->Text = L"Iso Glas 082444-1EJ1 0.4mm Temperature 180C            350UAH/m^2";
+			treeNode15->Name = L"Node4";
+			treeNode15->Tag = L"800";
+			treeNode15->Text = L"Iso Glas 082620-0EJ2 0.75mm Temperature 180C          800UAH/m^2";
+			treeNode16->Name = L"Node5";
+			treeNode16->Tag = L"1700";
+			treeNode16->Text = L"Iso Glas 082930 1.2mm Temperature 180C                   1700UAH/m^2";
+			treeNode17->Name = L"Node6";
+			treeNode17->Tag = L"1200";
+			treeNode17->Text = L"Iso Glas 082910 1.2mm Temperature 180C                   1200UAH/m^2";
+			treeNode18->Name = L"Node7";
+			treeNode18->Tag = L"1700";
+			treeNode18->Text = L"Iso Glas 082930 1.2mm Temperature 180C                   1700UAH/m^2";
+			treeNode19->Name = L"Node8";
+			treeNode19->Tag = L"350";
+			treeNode19->Text = L"Iso Glas 082448 0.4mm Temperature 180C                     350UAH/m^2";
+			treeNode20->Name = L"Node9";
+			treeNode20->Tag = L"1200";
+			treeNode20->Text = L"Borolon 1.2mm Temperature 180C                              1200UAH/m^2";
+			treeNode21->Name = L"Node10";
+			treeNode21->Tag = L"1200";
+			treeNode21->Text = L"Oligocen 0.4mm Temperature 180C                               1200UAH/m^2";
+			treeNode22->Name = L"Node6";
+			treeNode22->Text = L"Ткань техническая термостойкая с силиконовым покрытием";
+			treeNode23->Name = L"Node1";
+			treeNode23->Tag = L"1200";
+			treeNode23->Text = L"Fibertex 500 0.4mm Temperature 310C                          1200UAH/m^2";
+			treeNode24->Name = L"Node2";
+			treeNode24->Tag = L"1800";
+			treeNode24->Text = L"Fibertex 1000 0.9mm Temperature 310C                        1800UAH/m^2";
+			treeNode25->Name = L"Node3";
+			treeNode25->Tag = L"980";
+			treeNode25->Text = L"Chemiflex 14 0.4mm Temperature 310C                           980UAH/m^2";
+			treeNode26->Name = L"Node4";
+			treeNode26->Tag = L"880";
+			treeNode26->Text = L"440-1SC 0.4mm Temperature 310C                                  880UAH/m^2";
+			treeNode27->Name = L"Node5";
+			treeNode27->Tag = L"2000";
+			treeNode27->Text = L"Fibertex 501 0.45mm Temperature 310C                        2000UAH/m^2";
+			treeNode28->Name = L"Node2";
+			treeNode28->Text = L"Ткань техническая термостойкая с PTFE покрытием";
+			treeNode29->Name = L"Node1";
+			treeNode29->Tag = L"200";
+			treeNode29->Text = L"Iso Glas 550 12.5mm Temperature 550C                         200UAH/m^2";
+			treeNode30->Name = L"Node3";
+			treeNode30->Text = L"Ткань техническая иглопробивная термостойкая";
+			treeNode31->Name = L"Node5";
+			treeNode31->Tag = L"350";
+			treeNode31->Text = L"Пленка PTFE 0.2mm               350UAH/m^2 ";
+			treeNode32->Name = L"Node4";
+			treeNode32->Tag = L"350";
+			treeNode32->Text = L"Net/Сетка Н/Ж  0.4mm                  350UAH/m^2";
+			treeNode33->Name = L"Node0";
+			treeNode33->Tag = L"2200";
+			treeNode33->Text = L"GlassFabric steel 0.3mm        2200UAH/m^2";
+			treeNode34->Name = L"Node1";
+			treeNode34->Text = L"Прочее";
 			this->treeView1->Nodes->AddRange(gcnew cli::array< System::Windows::Forms::TreeNode^  >(5) {
-				treeNode68, treeNode79, treeNode85,
-					treeNode87, treeNode91
+				treeNode11, treeNode22, treeNode28,
+					treeNode30, treeNode34
 			});
 			this->treeView1->ShowLines = false;
 			this->treeView1->ShowNodeToolTips = true;
@@ -596,39 +599,39 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->treeView1->TabIndex = 23;
 			this->treeView1->AfterCheck += gcnew System::Windows::Forms::TreeViewEventHandler(this, &CalcForm::TreeView1_AfterCheck);
 			// 
-			// checkBox3
+			// Flange_Check_box
 			// 
-			this->checkBox3->AutoSize = true;
-			this->checkBox3->BackColor = System::Drawing::SystemColors::Window;
-			this->checkBox3->Enabled = false;
-			this->checkBox3->FlatAppearance->BorderSize = 0;
-			this->checkBox3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->checkBox3->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Flange_Check_box->AutoSize = true;
+			this->Flange_Check_box->BackColor = System::Drawing::SystemColors::Window;
+			this->Flange_Check_box->Enabled = false;
+			this->Flange_Check_box->FlatAppearance->BorderSize = 0;
+			this->Flange_Check_box->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Flange_Check_box->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox3->Location = System::Drawing::Point(295, 78);
-			this->checkBox3->Name = L"checkBox3";
-			this->checkBox3->Size = System::Drawing::Size(118, 23);
-			this->checkBox3->TabIndex = 24;
-			this->checkBox3->Text = L"Фланцевый";
-			this->checkBox3->UseVisualStyleBackColor = false;
-			this->checkBox3->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::CheckBox3_CheckedChanged);
+			this->Flange_Check_box->Location = System::Drawing::Point(295, 78);
+			this->Flange_Check_box->Name = L"Flange_Check_box";
+			this->Flange_Check_box->Size = System::Drawing::Size(118, 23);
+			this->Flange_Check_box->TabIndex = 24;
+			this->Flange_Check_box->Text = L"Фланцевый";
+			this->Flange_Check_box->UseVisualStyleBackColor = false;
+			this->Flange_Check_box->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::Flange_Check_box_CheckedChanged);
 			// 
-			// checkBox4
+			// Tape_Check_box
 			// 
-			this->checkBox4->AutoSize = true;
-			this->checkBox4->BackColor = System::Drawing::SystemColors::Window;
-			this->checkBox4->Enabled = false;
-			this->checkBox4->FlatAppearance->BorderSize = 0;
-			this->checkBox4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->checkBox4->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Tape_Check_box->AutoSize = true;
+			this->Tape_Check_box->BackColor = System::Drawing::SystemColors::Window;
+			this->Tape_Check_box->Enabled = false;
+			this->Tape_Check_box->FlatAppearance->BorderSize = 0;
+			this->Tape_Check_box->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Tape_Check_box->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox4->Location = System::Drawing::Point(295, 138);
-			this->checkBox4->Name = L"checkBox4";
-			this->checkBox4->Size = System::Drawing::Size(116, 23);
-			this->checkBox4->TabIndex = 25;
-			this->checkBox4->Text = L"Ленточный";
-			this->checkBox4->UseVisualStyleBackColor = false;
-			this->checkBox4->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::CheckBox4_CheckedChanged);
+			this->Tape_Check_box->Location = System::Drawing::Point(295, 138);
+			this->Tape_Check_box->Name = L"Tape_Check_box";
+			this->Tape_Check_box->Size = System::Drawing::Size(116, 23);
+			this->Tape_Check_box->TabIndex = 25;
+			this->Tape_Check_box->Text = L"Ленточный";
+			this->Tape_Check_box->UseVisualStyleBackColor = false;
+			this->Tape_Check_box->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::Tape_Check_box_CheckedChanged);
 			// 
 			// label7
 			// 
@@ -653,14 +656,14 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label10->TabIndex = 26;
 			this->label10->Text = L"Коэффициент";
 			// 
-			// textBox4
+			// coefficient_textBox
 			// 
-			this->textBox4->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox4->Enabled = false;
-			this->textBox4->Location = System::Drawing::Point(430, 306);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(92, 20);
-			this->textBox4->TabIndex = 27;
+			this->coefficient_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->coefficient_textBox->Enabled = false;
+			this->coefficient_textBox->Location = System::Drawing::Point(430, 306);
+			this->coefficient_textBox->Name = L"coefficient_textBox";
+			this->coefficient_textBox->Size = System::Drawing::Size(92, 20);
+			this->coefficient_textBox->TabIndex = 27;
 			// 
 			// textBox7
 			// 
@@ -673,28 +676,28 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->textBox7->Size = System::Drawing::Size(124, 51);
 			this->textBox7->TabIndex = 28;
 			// 
-			// checkBox5
+			// Index_Check_box
 			// 
-			this->checkBox5->AutoSize = true;
-			this->checkBox5->BackColor = System::Drawing::SystemColors::Window;
-			this->checkBox5->Enabled = false;
-			this->checkBox5->FlatAppearance->BorderSize = 0;
-			this->checkBox5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->checkBox5->Location = System::Drawing::Point(408, 309);
-			this->checkBox5->Name = L"checkBox5";
-			this->checkBox5->Size = System::Drawing::Size(12, 11);
-			this->checkBox5->TabIndex = 29;
-			this->checkBox5->UseVisualStyleBackColor = false;
-			this->checkBox5->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::CheckBox5_CheckedChanged);
+			this->Index_Check_box->AutoSize = true;
+			this->Index_Check_box->BackColor = System::Drawing::SystemColors::Window;
+			this->Index_Check_box->Enabled = false;
+			this->Index_Check_box->FlatAppearance->BorderSize = 0;
+			this->Index_Check_box->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Index_Check_box->Location = System::Drawing::Point(408, 309);
+			this->Index_Check_box->Name = L"Index_Check_box";
+			this->Index_Check_box->Size = System::Drawing::Size(12, 11);
+			this->Index_Check_box->TabIndex = 29;
+			this->Index_Check_box->UseVisualStyleBackColor = false;
+			this->Index_Check_box->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::Index_Check_box_CheckedChanged);
 			// 
-			// textBox6
+			// Silicone_textBox
 			// 
-			this->textBox6->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox6->Enabled = false;
-			this->textBox6->Location = System::Drawing::Point(430, 341);
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(56, 20);
-			this->textBox6->TabIndex = 30;
+			this->Silicone_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Silicone_textBox->Enabled = false;
+			this->Silicone_textBox->Location = System::Drawing::Point(430, 341);
+			this->Silicone_textBox->Name = L"Silicone_textBox";
+			this->Silicone_textBox->Size = System::Drawing::Size(56, 20);
+			this->Silicone_textBox->TabIndex = 30;
 			// 
 			// label9
 			// 
@@ -708,22 +711,22 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label9->TabIndex = 31;
 			this->label9->Text = L"Силикон";
 			// 
-			// checkBox6
+			// Insert_Check_box
 			// 
-			this->checkBox6->AutoSize = true;
-			this->checkBox6->BackColor = System::Drawing::SystemColors::Window;
-			this->checkBox6->Enabled = false;
-			this->checkBox6->FlatAppearance->BorderSize = 0;
-			this->checkBox6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->checkBox6->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Insert_Check_box->AutoSize = true;
+			this->Insert_Check_box->BackColor = System::Drawing::SystemColors::Window;
+			this->Insert_Check_box->Enabled = false;
+			this->Insert_Check_box->FlatAppearance->BorderSize = 0;
+			this->Insert_Check_box->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Insert_Check_box->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox6->Location = System::Drawing::Point(465, 113);
-			this->checkBox6->Name = L"checkBox6";
-			this->checkBox6->Size = System::Drawing::Size(100, 23);
-			this->checkBox6->TabIndex = 32;
-			this->checkBox6->Text = L"Вкладыш";
-			this->checkBox6->UseVisualStyleBackColor = false;
-			this->checkBox6->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::CheckBox6_CheckedChanged);
+			this->Insert_Check_box->Location = System::Drawing::Point(465, 113);
+			this->Insert_Check_box->Name = L"Insert_Check_box";
+			this->Insert_Check_box->Size = System::Drawing::Size(100, 23);
+			this->Insert_Check_box->TabIndex = 32;
+			this->Insert_Check_box->Text = L"Вкладыш";
+			this->Insert_Check_box->UseVisualStyleBackColor = false;
+			this->Insert_Check_box->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::Insert_Check_box_CheckedChanged);
 			// 
 			// label11
 			// 
@@ -738,14 +741,14 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label11->TabIndex = 33;
 			this->label11->Text = L"Размер вкладыша :";
 			// 
-			// textBox8
+			// Insert_Length1_textBox
 			// 
-			this->textBox8->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox8->Enabled = false;
-			this->textBox8->Location = System::Drawing::Point(206, 571);
-			this->textBox8->Name = L"textBox8";
-			this->textBox8->Size = System::Drawing::Size(92, 20);
-			this->textBox8->TabIndex = 39;
+			this->Insert_Length1_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Insert_Length1_textBox->Enabled = false;
+			this->Insert_Length1_textBox->Location = System::Drawing::Point(206, 571);
+			this->Insert_Length1_textBox->Name = L"Insert_Length1_textBox";
+			this->Insert_Length1_textBox->Size = System::Drawing::Size(92, 20);
+			this->Insert_Length1_textBox->TabIndex = 39;
 			// 
 			// label12
 			// 
@@ -759,14 +762,14 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label12->TabIndex = 38;
 			this->label12->Text = L"Высота";
 			// 
-			// textBox9
+			// Insert_width_textBox
 			// 
-			this->textBox9->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox9->Enabled = false;
-			this->textBox9->Location = System::Drawing::Point(206, 602);
-			this->textBox9->Name = L"textBox9";
-			this->textBox9->Size = System::Drawing::Size(92, 20);
-			this->textBox9->TabIndex = 37;
+			this->Insert_width_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Insert_width_textBox->Enabled = false;
+			this->Insert_width_textBox->Location = System::Drawing::Point(206, 602);
+			this->Insert_width_textBox->Name = L"Insert_width_textBox";
+			this->Insert_width_textBox->Size = System::Drawing::Size(92, 20);
+			this->Insert_width_textBox->TabIndex = 37;
 			// 
 			// label13
 			// 
@@ -792,23 +795,23 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label14->TabIndex = 35;
 			this->label14->Text = L"Ширина";
 			// 
-			// textBox10
+			// Insert_height_textBox
 			// 
-			this->textBox10->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox10->Enabled = false;
-			this->textBox10->Location = System::Drawing::Point(488, 571);
-			this->textBox10->Name = L"textBox10";
-			this->textBox10->Size = System::Drawing::Size(92, 20);
-			this->textBox10->TabIndex = 34;
+			this->Insert_height_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Insert_height_textBox->Enabled = false;
+			this->Insert_height_textBox->Location = System::Drawing::Point(488, 571);
+			this->Insert_height_textBox->Name = L"Insert_height_textBox";
+			this->Insert_height_textBox->Size = System::Drawing::Size(92, 20);
+			this->Insert_height_textBox->TabIndex = 34;
 			// 
-			// textBox11
+			// Length1_textBox1
 			// 
-			this->textBox11->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox11->Enabled = false;
-			this->textBox11->Location = System::Drawing::Point(488, 606);
-			this->textBox11->Name = L"textBox11";
-			this->textBox11->Size = System::Drawing::Size(92, 20);
-			this->textBox11->TabIndex = 41;
+			this->Length1_textBox1->BackColor = System::Drawing::SystemColors::Window;
+			this->Length1_textBox1->Enabled = false;
+			this->Length1_textBox1->Location = System::Drawing::Point(488, 606);
+			this->Length1_textBox1->Name = L"Length1_textBox1";
+			this->Length1_textBox1->Size = System::Drawing::Size(92, 20);
+			this->Length1_textBox1->TabIndex = 41;
 			// 
 			// label15
 			// 
@@ -835,27 +838,27 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label16->TabIndex = 42;
 			this->label16->Text = L"Работа за  основную часть :";
 			// 
-			// textBox12
+			// Work_cost_main_part_textBox
 			// 
-			this->textBox12->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox12->Enabled = false;
-			this->textBox12->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Bold));
-			this->textBox12->Location = System::Drawing::Point(269, 398);
-			this->textBox12->Multiline = true;
-			this->textBox12->Name = L"textBox12";
-			this->textBox12->Size = System::Drawing::Size(130, 33);
-			this->textBox12->TabIndex = 43;
+			this->Work_cost_main_part_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Work_cost_main_part_textBox->Enabled = false;
+			this->Work_cost_main_part_textBox->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Bold));
+			this->Work_cost_main_part_textBox->Location = System::Drawing::Point(269, 398);
+			this->Work_cost_main_part_textBox->Multiline = true;
+			this->Work_cost_main_part_textBox->Name = L"Work_cost_main_part_textBox";
+			this->Work_cost_main_part_textBox->Size = System::Drawing::Size(130, 33);
+			this->Work_cost_main_part_textBox->TabIndex = 43;
 			// 
-			// textBox13
+			// Length1_Width_textBox
 			// 
-			this->textBox13->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox13->Enabled = false;
-			this->textBox13->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Bold));
-			this->textBox13->Location = System::Drawing::Point(247, 652);
-			this->textBox13->Multiline = true;
-			this->textBox13->Name = L"textBox13";
-			this->textBox13->Size = System::Drawing::Size(130, 33);
-			this->textBox13->TabIndex = 45;
+			this->Length1_Width_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Length1_Width_textBox->Enabled = false;
+			this->Length1_Width_textBox->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Bold));
+			this->Length1_Width_textBox->Location = System::Drawing::Point(247, 652);
+			this->Length1_Width_textBox->Multiline = true;
+			this->Length1_Width_textBox->Name = L"Length1_Width_textBox";
+			this->Length1_Width_textBox->Size = System::Drawing::Size(130, 33);
+			this->Length1_Width_textBox->TabIndex = 45;
 			// 
 			// label17
 			// 
@@ -870,24 +873,24 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label17->TabIndex = 44;
 			this->label17->Text = L"Работа за вкладыш :";
 			// 
-			// button3
+			// Create_print_file_button
 			// 
-			this->button3->BackColor = System::Drawing::SystemColors::Window;
-			this->button3->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
-			this->button3->FlatAppearance->BorderSize = 0;
-			this->button3->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
+			this->Create_print_file_button->BackColor = System::Drawing::SystemColors::Window;
+			this->Create_print_file_button->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
+			this->Create_print_file_button->FlatAppearance->BorderSize = 0;
+			this->Create_print_file_button->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->button3->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
-			this->button3->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
-			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button3->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button3->Location = System::Drawing::Point(430, 653);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(138, 33);
-			this->button3->TabIndex = 47;
-			this->button3->Text = L"Создать файл на печать";
-			this->button3->UseVisualStyleBackColor = false;
-			this->button3->Click += gcnew System::EventHandler(this, &CalcForm::Button3_Click);
+			this->Create_print_file_button->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
+			this->Create_print_file_button->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
+			this->Create_print_file_button->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->Create_print_file_button->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->Create_print_file_button->Location = System::Drawing::Point(430, 653);
+			this->Create_print_file_button->Name = L"Create_print_file_button";
+			this->Create_print_file_button->Size = System::Drawing::Size(138, 33);
+			this->Create_print_file_button->TabIndex = 47;
+			this->Create_print_file_button->Text = L"Создать файл на печать";
+			this->Create_print_file_button->UseVisualStyleBackColor = false;
+			this->Create_print_file_button->Click += gcnew System::EventHandler(this, &CalcForm::Create_print_file_button_Click);
 			// 
 			// treeView2
 			// 
@@ -898,50 +901,50 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 				static_cast<System::Byte>(204)));
 			this->treeView2->Location = System::Drawing::Point(606, 423);
 			this->treeView2->Name = L"treeView2";
-			treeNode92->Name = L"Node1";
-			treeNode92->Tag = L"250";
-			treeNode92->Text = L"Iso Glass 550 12,5mm Temperature <500C  250UAH/m^3";
-			treeNode93->Name = L"Node3";
-			treeNode93->Tag = L"15000";
-			treeNode93->Text = L"Ceramics 12mm Temperature <1000C 15000UAH/m^3";
-			treeNode94->Name = L"Node4";
-			treeNode94->Tag = L"9000";
-			treeNode94->Text = L"Ceramics 25mm Temperature <1000C 9000UAH/m^3";
-			treeNode95->Name = L"Node5";
-			treeNode95->Tag = L"7000";
-			treeNode95->Text = L"Ceramics 50mm Temperature <1000C 7000UAH/m^3";
-			treeNode96->Checked = true;
-			treeNode96->Name = L"Node2";
-			treeNode96->Text = L"Ткань техническая иглопробивная термостойкая";
-			treeNode97->Name = L"Node0";
-			treeNode97->Text = L"Внтуренняя часть(м^3)";
-			treeNode98->Name = L"Node6";
-			treeNode98->Tag = L"300";
-			treeNode98->Text = L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2";
-			treeNode99->Name = L"Node7";
-			treeNode99->Tag = L"450";
-			treeNode99->Text = L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2";
-			treeNode100->Name = L"Node8";
-			treeNode100->Tag = L"850";
-			treeNode100->Text = L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2";
-			treeNode101->Name = L"Node7";
-			treeNode101->Tag = L"800";
-			treeNode101->Text = L"Iso Therm 800 2mm Temperature 800C                           800UAH/m^2";
-			treeNode102->Name = L"Node9";
-			treeNode102->Tag = L"450";
-			treeNode102->Text = L"Ceramics HT 1000 3mm Temperature 1050C                450UAH/m^2";
-			treeNode103->Name = L"Node10";
-			treeNode103->Tag = L"1400";
-			treeNode103->Text = L"TXG 2361 1.2mm Temperature 1050C                           1400UAH/m^2";
-			treeNode104->Name = L"Node11";
-			treeNode104->Tag = L"450";
-			treeNode104->Text = L"TKT 1000 1.2mm Temperature 1050C                             450UAH/m^2";
-			treeNode105->Checked = true;
-			treeNode105->Name = L"Node5";
-			treeNode105->Text = L"Ткань техническая термостойкая";
-			treeNode106->Name = L"Node0";
-			treeNode106->Text = L"Внешняя часть(м^2)";
-			this->treeView2->Nodes->AddRange(gcnew cli::array< System::Windows::Forms::TreeNode^  >(2) { treeNode97, treeNode106 });
+			treeNode35->Name = L"Node1";
+			treeNode35->Tag = L"250";
+			treeNode35->Text = L"Iso Glass 550 12,5mm Temperature <500C  250UAH/m^3";
+			treeNode36->Name = L"Node3";
+			treeNode36->Tag = L"15000";
+			treeNode36->Text = L"Ceramics 12mm Temperature <1000C 15000UAH/m^3";
+			treeNode37->Name = L"Node4";
+			treeNode37->Tag = L"9000";
+			treeNode37->Text = L"Ceramics 25mm Temperature <1000C 9000UAH/m^3";
+			treeNode38->Name = L"Node5";
+			treeNode38->Tag = L"7000";
+			treeNode38->Text = L"Ceramics 50mm Temperature <1000C 7000UAH/m^3";
+			treeNode39->Checked = true;
+			treeNode39->Name = L"Node2";
+			treeNode39->Text = L"Ткань техническая иглопробивная термостойкая";
+			treeNode40->Name = L"Node0";
+			treeNode40->Text = L"Внтуренняя часть(м^3)";
+			treeNode41->Name = L"Node6";
+			treeNode41->Tag = L"300";
+			treeNode41->Text = L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2";
+			treeNode42->Name = L"Node7";
+			treeNode42->Tag = L"450";
+			treeNode42->Text = L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2";
+			treeNode43->Name = L"Node8";
+			treeNode43->Tag = L"850";
+			treeNode43->Text = L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2";
+			treeNode44->Name = L"Node7";
+			treeNode44->Tag = L"800";
+			treeNode44->Text = L"Iso Therm 800 2mm Temperature 800C                           800UAH/m^2";
+			treeNode45->Name = L"Node9";
+			treeNode45->Tag = L"450";
+			treeNode45->Text = L"Ceramics HT 1000 3mm Temperature 1050C                450UAH/m^2";
+			treeNode46->Name = L"Node10";
+			treeNode46->Tag = L"1400";
+			treeNode46->Text = L"TXG 2361 1.2mm Temperature 1050C                           1400UAH/m^2";
+			treeNode47->Name = L"Node11";
+			treeNode47->Tag = L"450";
+			treeNode47->Text = L"TKT 1000 1.2mm Temperature 1050C                             450UAH/m^2";
+			treeNode48->Checked = true;
+			treeNode48->Name = L"Node5";
+			treeNode48->Text = L"Ткань техническая термостойкая";
+			treeNode49->Name = L"Node0";
+			treeNode49->Text = L"Внешняя часть(м^2)";
+			this->treeView2->Nodes->AddRange(gcnew cli::array< System::Windows::Forms::TreeNode^  >(2) { treeNode40, treeNode49 });
 			this->treeView2->ShowLines = false;
 			this->treeView2->ShowPlusMinus = false;
 			this->treeView2->ShowRootLines = false;
@@ -961,14 +964,14 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label19->TabIndex = 50;
 			this->label19->Text = L"Температура";
 			// 
-			// textBox14
+			// Temperature_textBox
 			// 
-			this->textBox14->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox14->Enabled = false;
-			this->textBox14->Location = System::Drawing::Point(125, 450);
-			this->textBox14->Name = L"textBox14";
-			this->textBox14->Size = System::Drawing::Size(39, 20);
-			this->textBox14->TabIndex = 51;
+			this->Temperature_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Temperature_textBox->Enabled = false;
+			this->Temperature_textBox->Location = System::Drawing::Point(125, 450);
+			this->Temperature_textBox->Name = L"Temperature_textBox";
+			this->Temperature_textBox->Size = System::Drawing::Size(39, 20);
+			this->Temperature_textBox->TabIndex = 51;
 			// 
 			// label20
 			// 
@@ -982,14 +985,14 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label20->TabIndex = 52;
 			this->label20->Text = L"Номер заказа";
 			// 
-			// textBox15
+			// Order_number_textBox
 			// 
-			this->textBox15->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox15->Enabled = false;
-			this->textBox15->Location = System::Drawing::Point(125, 483);
-			this->textBox15->Name = L"textBox15";
-			this->textBox15->Size = System::Drawing::Size(39, 20);
-			this->textBox15->TabIndex = 53;
+			this->Order_number_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Order_number_textBox->Enabled = false;
+			this->Order_number_textBox->Location = System::Drawing::Point(125, 483);
+			this->Order_number_textBox->Name = L"Order_number_textBox";
+			this->Order_number_textBox->Size = System::Drawing::Size(39, 20);
+			this->Order_number_textBox->TabIndex = 53;
 			// 
 			// treeView3
 			// 
@@ -1000,29 +1003,29 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 				static_cast<System::Byte>(204)));
 			this->treeView3->Location = System::Drawing::Point(606, 252);
 			this->treeView3->Name = L"treeView3";
-			treeNode107->Name = L"Node1";
-			treeNode107->Tag = L"250";
-			treeNode107->Text = L"Iso Glas 550 W2000 0.6mm Temperature 550C              250UAH/m^2";
-			treeNode108->Name = L"Node2";
-			treeNode108->Tag = L"300";
-			treeNode108->Text = L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2";
-			treeNode109->Name = L"Node3";
-			treeNode109->Tag = L"450";
-			treeNode109->Text = L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2";
-			treeNode110->Name = L"Node4";
-			treeNode110->Tag = L"850";
-			treeNode110->Text = L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2";
-			treeNode111->Name = L"Node0";
-			treeNode111->Text = L"Ткань техническая термостойкая";
-			treeNode112->Name = L"Node6";
-			treeNode112->Tag = L"460";
-			treeNode112->Text = L"Iso Glas 082444-1EJ2 0.4mm Temperature 180C            460UAH/m^2";
-			treeNode113->Name = L"Node7";
-			treeNode113->Tag = L"350";
-			treeNode113->Text = L"Iso Glas 082444-1EJ1 0.4mm Temperature 180C            350UAH/m^2";
-			treeNode114->Name = L"Node5";
-			treeNode114->Text = L"Ткань техническая термостойкая с силиконовым покрытием";
-			this->treeView3->Nodes->AddRange(gcnew cli::array< System::Windows::Forms::TreeNode^  >(2) { treeNode111, treeNode114 });
+			treeNode50->Name = L"Node1";
+			treeNode50->Tag = L"250";
+			treeNode50->Text = L"Iso Glas 550 W2000 0.6mm Temperature 550C              250UAH/m^2";
+			treeNode51->Name = L"Node2";
+			treeNode51->Tag = L"300";
+			treeNode51->Text = L"Iso Glas 550 W2000 1mm Temperature 550C                 300UAH/m^2";
+			treeNode52->Name = L"Node3";
+			treeNode52->Tag = L"450";
+			treeNode52->Text = L"Iso Glas 550 W2000 2mm Temperature 550C                 450UAH/m^2";
+			treeNode53->Name = L"Node4";
+			treeNode53->Tag = L"850";
+			treeNode53->Text = L"Iso Glas 550 W2000 3mm Temperature 550C                 850UAH/m^2";
+			treeNode54->Name = L"Node0";
+			treeNode54->Text = L"Ткань техническая термостойкая";
+			treeNode55->Name = L"Node6";
+			treeNode55->Tag = L"460";
+			treeNode55->Text = L"Iso Glas 082444-1EJ2 0.4mm Temperature 180C            460UAH/m^2";
+			treeNode56->Name = L"Node7";
+			treeNode56->Tag = L"350";
+			treeNode56->Text = L"Iso Glas 082444-1EJ1 0.4mm Temperature 180C            350UAH/m^2";
+			treeNode57->Name = L"Node5";
+			treeNode57->Text = L"Ткань техническая термостойкая с силиконовым покрытием";
+			this->treeView3->Nodes->AddRange(gcnew cli::array< System::Windows::Forms::TreeNode^  >(2) { treeNode54, treeNode57 });
 			this->treeView3->ShowLines = false;
 			this->treeView3->ShowPlusMinus = false;
 			this->treeView3->ShowRootLines = false;
@@ -1030,25 +1033,25 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->treeView3->TabIndex = 54;
 			this->treeView3->AfterCheck += gcnew System::Windows::Forms::TreeViewEventHandler(this, &CalcForm::TreeView3_AfterCheck);
 			// 
-			// button4
+			// Select_layer_count_button
 			// 
-			this->button4->BackColor = System::Drawing::SystemColors::Window;
-			this->button4->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
-			this->button4->FlatAppearance->BorderSize = 0;
-			this->button4->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
+			this->Select_layer_count_button->BackColor = System::Drawing::SystemColors::Window;
+			this->Select_layer_count_button->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
+			this->Select_layer_count_button->FlatAppearance->BorderSize = 0;
+			this->Select_layer_count_button->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->button4->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
-			this->button4->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
-			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button4->Location = System::Drawing::Point(606, 190);
-			this->button4->Name = L"button4";
-			this->button4->RightToLeft = System::Windows::Forms::RightToLeft::No;
-			this->button4->Size = System::Drawing::Size(100, 48);
-			this->button4->TabIndex = 55;
-			this->button4->Text = L"Выбор количества слоев";
-			this->button4->UseVisualStyleBackColor = false;
-			this->button4->Click += gcnew System::EventHandler(this, &CalcForm::Button4_Click);
+			this->Select_layer_count_button->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
+			this->Select_layer_count_button->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
+			this->Select_layer_count_button->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->Select_layer_count_button->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->Select_layer_count_button->Location = System::Drawing::Point(606, 190);
+			this->Select_layer_count_button->Name = L"Select_layer_count_button";
+			this->Select_layer_count_button->RightToLeft = System::Windows::Forms::RightToLeft::No;
+			this->Select_layer_count_button->Size = System::Drawing::Size(100, 48);
+			this->Select_layer_count_button->TabIndex = 55;
+			this->Select_layer_count_button->Text = L"Выбор количества слоев";
+			this->Select_layer_count_button->UseVisualStyleBackColor = false;
+			this->Select_layer_count_button->Click += gcnew System::EventHandler(this, &CalcForm::Select_layer_count_button_Click);
 			// 
 			// treeView4
 			// 
@@ -1064,25 +1067,25 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->treeView4->Visible = false;
 			this->treeView4->AfterSelect += gcnew System::Windows::Forms::TreeViewEventHandler(this, &CalcForm::TreeView4_AfterSelect);
 			// 
-			// button5
+			// Select_layer_button
 			// 
-			this->button5->BackColor = System::Drawing::SystemColors::Window;
-			this->button5->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
-			this->button5->FlatAppearance->BorderSize = 0;
-			this->button5->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
+			this->Select_layer_button->BackColor = System::Drawing::SystemColors::Window;
+			this->Select_layer_button->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
+			this->Select_layer_button->FlatAppearance->BorderSize = 0;
+			this->Select_layer_button->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->button5->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
-			this->button5->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
-			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button5->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button5->Location = System::Drawing::Point(606, 190);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(100, 48);
-			this->button5->TabIndex = 57;
-			this->button5->Text = L"Выбор материалов";
-			this->button5->UseVisualStyleBackColor = false;
-			this->button5->Visible = false;
-			this->button5->Click += gcnew System::EventHandler(this, &CalcForm::Button5_Click);
+			this->Select_layer_button->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
+			this->Select_layer_button->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
+			this->Select_layer_button->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Select_layer_button->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->Select_layer_button->Location = System::Drawing::Point(606, 190);
+			this->Select_layer_button->Name = L"Select_layer_button";
+			this->Select_layer_button->Size = System::Drawing::Size(100, 48);
+			this->Select_layer_button->TabIndex = 57;
+			this->Select_layer_button->Text = L"Выбор материалов";
+			this->Select_layer_button->UseVisualStyleBackColor = false;
+			this->Select_layer_button->Visible = false;
+			this->Select_layer_button->Click += gcnew System::EventHandler(this, &CalcForm::Select_layer_button_Click);
 			// 
 			// label22
 			// 
@@ -1096,36 +1099,36 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label22->TabIndex = 59;
 			this->label22->Text = L"Кол. слоев";
 			// 
-			// textBox16
+			// Length1_Silicone_textBox
 			// 
-			this->textBox16->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox16->Enabled = false;
-			this->textBox16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic))));
-			this->textBox16->Location = System::Drawing::Point(936, 207);
-			this->textBox16->Name = L"textBox16";
-			this->textBox16->Size = System::Drawing::Size(26, 20);
-			this->textBox16->TabIndex = 60;
-			this->textBox16->Enter += gcnew System::EventHandler(this, &CalcForm::TextBox16_Enter);
+			this->Length1_Silicone_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Length1_Silicone_textBox->Enabled = false;
+			this->Length1_Silicone_textBox->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic))));
+			this->Length1_Silicone_textBox->Location = System::Drawing::Point(936, 207);
+			this->Length1_Silicone_textBox->Name = L"Length1_Silicone_textBox";
+			this->Length1_Silicone_textBox->Size = System::Drawing::Size(26, 20);
+			this->Length1_Silicone_textBox->TabIndex = 60;
+			this->Length1_Silicone_textBox->Enter += gcnew System::EventHandler(this, &CalcForm::Length1_Silicone_textBox_Enter);
 			// 
-			// button6
+			// Input_count_button
 			// 
-			this->button6->BackColor = System::Drawing::SystemColors::Window;
-			this->button6->Enabled = false;
-			this->button6->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
-			this->button6->FlatAppearance->BorderSize = 0;
-			this->button6->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
+			this->Input_count_button->BackColor = System::Drawing::SystemColors::Window;
+			this->Input_count_button->Enabled = false;
+			this->Input_count_button->FlatAppearance->BorderColor = System::Drawing::SystemColors::ButtonFace;
+			this->Input_count_button->FlatAppearance->BorderSize = 0;
+			this->Input_count_button->FlatAppearance->CheckedBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->button6->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
-			this->button6->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
-			this->button6->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button6->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button6->Location = System::Drawing::Point(968, 207);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(50, 20);
-			this->button6->TabIndex = 62;
-			this->button6->Text = L"Ввод";
-			this->button6->UseVisualStyleBackColor = false;
-			this->button6->Click += gcnew System::EventHandler(this, &CalcForm::TextBox16_Enter);
+			this->Input_count_button->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
+			this->Input_count_button->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
+			this->Input_count_button->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->Input_count_button->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->Input_count_button->Location = System::Drawing::Point(968, 207);
+			this->Input_count_button->Name = L"Input_count_button";
+			this->Input_count_button->Size = System::Drawing::Size(50, 20);
+			this->Input_count_button->TabIndex = 62;
+			this->Input_count_button->Text = L"Ввод";
+			this->Input_count_button->UseVisualStyleBackColor = false;
+			this->Input_count_button->Click += gcnew System::EventHandler(this, &CalcForm::Length1_Silicone_textBox_Enter);
 			// 
 			// label21
 			// 
@@ -1164,21 +1167,21 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			// 
 			this->загрузитьToolStripMenuItem->BackColor = System::Drawing::SystemColors::Window;
 			this->загрузитьToolStripMenuItem->Name = L"загрузитьToolStripMenuItem";
-			this->загрузитьToolStripMenuItem->Size = System::Drawing::Size(209, 22);
+			this->загрузитьToolStripMenuItem->Size = System::Drawing::Size(163, 22);
 			this->загрузитьToolStripMenuItem->Text = L"Загрузить";
 			this->загрузитьToolStripMenuItem->Click += gcnew System::EventHandler(this, &CalcForm::загрузитьToolStripMenuItem_Click);
 			// 
 			// сохранитьToolStripMenuItem
 			// 
 			this->сохранитьToolStripMenuItem->Name = L"сохранитьToolStripMenuItem";
-			this->сохранитьToolStripMenuItem->Size = System::Drawing::Size(209, 22);
+			this->сохранитьToolStripMenuItem->Size = System::Drawing::Size(163, 22);
 			this->сохранитьToolStripMenuItem->Text = L"Сохранить";
 			// 
 			// сохранитьКакToolStripMenuItem
 			// 
 			this->сохранитьКакToolStripMenuItem->BackColor = System::Drawing::SystemColors::Window;
 			this->сохранитьКакToolStripMenuItem->Name = L"сохранитьКакToolStripMenuItem";
-			this->сохранитьКакToolStripMenuItem->Size = System::Drawing::Size(209, 22);
+			this->сохранитьКакToolStripMenuItem->Size = System::Drawing::Size(163, 22);
 			this->сохранитьКакToolStripMenuItem->Text = L"Сохранить как...";
 			this->сохранитьКакToolStripMenuItem->Click += gcnew System::EventHandler(this, &CalcForm::сохранитьКакToolStripMenuItem_Click);
 			// 
@@ -1202,64 +1205,65 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->BackColor = System::Drawing::SystemColors::Window;
 			this->ClientSize = System::Drawing::Size(1068, 723);
 			this->Controls->Add(this->label21);
-			this->Controls->Add(this->button6);
-			this->Controls->Add(this->textBox16);
+			this->Controls->Add(this->Input_count_button);
+			this->Controls->Add(this->Length1_Silicone_textBox);
 			this->Controls->Add(this->label22);
-			this->Controls->Add(this->button4);
+			this->Controls->Add(this->Select_layer_count_button);
 			this->Controls->Add(this->treeView3);
-			this->Controls->Add(this->textBox15);
+			this->Controls->Add(this->Order_number_textBox);
 			this->Controls->Add(this->label20);
-			this->Controls->Add(this->textBox14);
+			this->Controls->Add(this->Temperature_textBox);
 			this->Controls->Add(this->label19);
 			this->Controls->Add(this->treeView2);
-			this->Controls->Add(this->button3);
-			this->Controls->Add(this->textBox13);
+			this->Controls->Add(this->Create_print_file_button);
+			this->Controls->Add(this->Length1_Width_textBox);
 			this->Controls->Add(this->label17);
-			this->Controls->Add(this->textBox12);
+			this->Controls->Add(this->Work_cost_main_part_textBox);
 			this->Controls->Add(this->label16);
-			this->Controls->Add(this->textBox11);
+			this->Controls->Add(this->Length1_textBox1);
 			this->Controls->Add(this->label15);
-			this->Controls->Add(this->textBox8);
+			this->Controls->Add(this->Insert_Length1_textBox);
 			this->Controls->Add(this->label12);
-			this->Controls->Add(this->textBox9);
+			this->Controls->Add(this->Insert_width_textBox);
 			this->Controls->Add(this->label13);
 			this->Controls->Add(this->label14);
-			this->Controls->Add(this->textBox10);
+			this->Controls->Add(this->Insert_height_textBox);
 			this->Controls->Add(this->label11);
-			this->Controls->Add(this->checkBox6);
+			this->Controls->Add(this->Insert_Check_box);
 			this->Controls->Add(this->label9);
-			this->Controls->Add(this->textBox6);
-			this->Controls->Add(this->checkBox5);
+			this->Controls->Add(this->Silicone_textBox);
+			this->Controls->Add(this->Index_Check_box);
 			this->Controls->Add(this->textBox7);
-			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->coefficient_textBox);
 			this->Controls->Add(this->label10);
 			this->Controls->Add(this->label7);
-			this->Controls->Add(this->checkBox4);
-			this->Controls->Add(this->checkBox3);
+			this->Controls->Add(this->Tape_Check_box);
+			this->Controls->Add(this->Flange_Check_box);
 			this->Controls->Add(this->treeView1);
 			this->Controls->Add(this->label6);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->Set_second_length_same_button);
+			this->Controls->Add(this->Length2_textBox);
 			this->Controls->Add(this->label8);
-			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->Width_textBox);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
-			this->Controls->Add(this->button1);
-			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->Calculate_button);
+			this->Controls->Add(this->Flange_width_textBox);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->checkBox2);
-			this->Controls->Add(this->checkBox1);
+			this->Controls->Add(this->Length1_textBox);
+			this->Controls->Add(this->Rectangle_Check_box);
+			this->Controls->Add(this->Circle_Check_box);
 			this->Controls->Add(this->treeView4);
-			this->Controls->Add(this->button5);
+			this->Controls->Add(this->Select_layer_button);
 			this->Controls->Add(this->menuStrip1);
 			this->Cursor = System::Windows::Forms::Cursors::Arrow;
 			this->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"CalcForm";
 			this->Text = L"New Config - Calculator ";
+			this->Load += gcnew System::EventHandler(this, &CalcForm::CalcForm_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->eventLog1))->EndInit();
@@ -1278,33 +1282,33 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 		String^ result;
 		String^ outputSize;
 
-	private: System::Void CheckBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
-			 System::Void CheckBox2_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
-			 System::Void Button2_Click(System::Object^ sender, System::EventArgs^ e);
-			 System::Void Button1_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void Circle_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Rectangle_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Set_second_length_same_button_Click(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Calculate_button_Click(System::Object^ sender, System::EventArgs^ e);
 
-			 System::Void CheckBox5_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Index_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
 
-			 System::Void CheckBox3_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Flange_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
 
-			 System::Void CheckBox4_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Tape_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
 
-			 System::Void CheckBox6_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Insert_Check_box_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
 
-			 System::Void Button3_Click(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Create_print_file_button_Click(System::Object^ sender, System::EventArgs^ e);
 
 			 System::Void TreeView1_AfterCheck(System::Object^ sender, System::Windows::Forms::TreeViewEventArgs^ e);
 			 System::Void TreeView2_AfterCheck(System::Object^ sender, System::Windows::Forms::TreeViewEventArgs^ e);
 
-			 System::Void Button4_Click(System::Object^ sender, System::EventArgs^ e);
-			 System::Void Button5_Click(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Select_layer_count_button_Click(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Select_layer_button_Click(System::Object^ sender, System::EventArgs^ e);
 
 
 			 System::Void TreeView4_AfterSelect(System::Object^ sender, System::Windows::Forms::TreeViewEventArgs^ e);
 
 
 
-			 System::Void TextBox16_Enter(System::Object^ sender, System::EventArgs^ e);
+			 System::Void Length1_Silicone_textBox_Enter(System::Object^ sender, System::EventArgs^ e);
 			 System::Void TreeView3_AfterCheck(System::Object^ sender, System::Windows::Forms::TreeViewEventArgs^ e);
 
 			 System::Void label21_TextChanged(System::Object^ sender, System::EventArgs^ e);
@@ -1312,5 +1316,7 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 
 			 System::Void загрузитьToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 			 System::Void сохранитьКакToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void CalcForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 };
