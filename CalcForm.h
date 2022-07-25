@@ -94,7 +94,7 @@ namespace CostCalculator {
 	private: System::Windows::Forms::Label^ label13;
 	private: System::Windows::Forms::Label^ label14;
 	private: System::Windows::Forms::TextBox^ Insert_height_textBox;
-	private: System::Windows::Forms::TextBox^ Length1_textBox1;
+	private: System::Windows::Forms::TextBox^ Insert_binding_width_textBox;
 	private: System::Windows::Forms::Label^ label15;
 	private: System::Windows::Forms::Label^ label16;
 	private: System::Windows::Forms::TextBox^ Work_cost_main_part_textBox;
@@ -254,7 +254,7 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->Insert_height_textBox = (gcnew System::Windows::Forms::TextBox());
-			this->Length1_textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->Insert_binding_width_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->Work_cost_main_part_textBox = (gcnew System::Windows::Forms::TextBox());
@@ -804,14 +804,14 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->Insert_height_textBox->Size = System::Drawing::Size(92, 20);
 			this->Insert_height_textBox->TabIndex = 34;
 			// 
-			// Length1_textBox1
+			// Insert_binding_width_textBox
 			// 
-			this->Length1_textBox1->BackColor = System::Drawing::SystemColors::Window;
-			this->Length1_textBox1->Enabled = false;
-			this->Length1_textBox1->Location = System::Drawing::Point(488, 606);
-			this->Length1_textBox1->Name = L"Length1_textBox1";
-			this->Length1_textBox1->Size = System::Drawing::Size(92, 20);
-			this->Length1_textBox1->TabIndex = 41;
+			this->Insert_binding_width_textBox->BackColor = System::Drawing::SystemColors::Window;
+			this->Insert_binding_width_textBox->Enabled = false;
+			this->Insert_binding_width_textBox->Location = System::Drawing::Point(488, 606);
+			this->Insert_binding_width_textBox->Name = L"Insert_binding_width_textBox";
+			this->Insert_binding_width_textBox->Size = System::Drawing::Size(92, 20);
+			this->Insert_binding_width_textBox->TabIndex = 41;
 			// 
 			// label15
 			// 
@@ -1220,7 +1220,7 @@ private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 			this->Controls->Add(this->label17);
 			this->Controls->Add(this->Work_cost_main_part_textBox);
 			this->Controls->Add(this->label16);
-			this->Controls->Add(this->Length1_textBox1);
+			this->Controls->Add(this->Insert_binding_width_textBox);
 			this->Controls->Add(this->label15);
 			this->Controls->Add(this->Insert_Length1_textBox);
 			this->Controls->Add(this->label12);

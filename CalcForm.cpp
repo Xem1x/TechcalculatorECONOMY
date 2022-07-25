@@ -489,11 +489,11 @@ System::Void CostCalculator::CalcForm::Calculate_button_Click(System::Object^ se
 
 		try
 		{
-			lengthAddEars = System::Convert::ToDouble(Length1_textBox1->Text) / 1000;
+			lengthAddEars = System::Convert::ToDouble(Insert_binding_width_textBox->Text) / 1000;
 		}
 		catch (FormatException^)
 		{
-			Length1_textBox1->BackColor = Color::FromArgb(255, 224, 192);
+			Insert_binding_width_textBox->BackColor = Color::FromArgb(255, 224, 192);
 			lengthAddEars = 0;
 		}
 
@@ -595,9 +595,9 @@ System::Void CostCalculator::CalcForm::Calculate_button_Click(System::Object^ se
 	{
 		Insert_height_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
-	if (Length1_textBox1->Text != "")
+	if (Insert_binding_width_textBox->Text != "")
 	{
-		Length1_textBox1->BackColor = Color::FromArgb(192, 255, 192);
+		Insert_binding_width_textBox->BackColor = Color::FromArgb(192, 255, 192);
 	}
 	if (Work_cost_main_part_textBox->Text != "")
 	{
@@ -778,7 +778,7 @@ System::Void CostCalculator::CalcForm::Insert_Check_box_CheckedChanged(System::O
 		Insert_Length1_textBox->Enabled = true;
 		Insert_width_textBox->Enabled = true;
 		Insert_height_textBox->Enabled = true;
-		Length1_textBox1->Enabled = true;
+		Insert_binding_width_textBox->Enabled = true;
 		Length1_Width_textBox->Enabled = true;
 
 		treeView2->Enabled = true;
@@ -795,7 +795,7 @@ System::Void CostCalculator::CalcForm::Insert_Check_box_CheckedChanged(System::O
 		Insert_Length1_textBox->Enabled = false;
 		Insert_width_textBox->Enabled = false;
 		Insert_height_textBox->Enabled = false;
-		Length1_textBox1->Enabled = false;
+		Insert_binding_width_textBox->Enabled = false;
 		Length1_Width_textBox->Enabled = false;
 		treeView2->Enabled = false;
 	}
